@@ -1,0 +1,499 @@
+{% extends 'Admin/basic.html' %}
+{% block title%} Distributor{% endblock %}
+{% block css %}
+body{
+    background-color: #efefef;
+}
+.navbar {
+    margin-bottom: 85px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    margin-left: 77px;
+    color: #ffffff;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.btn-group {
+    padding: 10px;
+}
+
+.btn-left {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 32px;
+    border-radius: 20px;
+    font-size: 11px;
+
+}
+
+.modal-footer {
+    padding: 5px;
+}
+
+.btn-w-h {
+    height: 36px;
+    width: 82px;
+    height: 32px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.modal-body-kyc {
+    padding-top: 0;
+}
+
+.modal-body-plot {
+    padding-top: 0;
+}
+
+/* a.icon-block {
+    display:inline-block;
+    width: 0;
+    float:left;
+    text-align:center;
+    background: #1D1B31;
+} */
+.modal-linear-bg-btn {
+    width: 110px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 8px;
+    height: 42px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.modal-linear-bg-btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.modal-linear-bg-btn:focus {
+    outline: none;
+}
+
+.modal-linear-bg-btn {
+    /* background: linear-gradient(-135deg, #c850c0, #4158d0);
+   border: linear-gradient(-135deg, #c850c0, #4158d0); */
+    /* box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75); */
+    /* background: #457197; */
+    background-image: linear-gradient(to right, #667eea, #003a55, #6B8DD6, #003a55);
+
+}
+
+#welcome-section {
+    background-color: #efefef;
+    /* box-shadow: 0px 47px 39px rgb(0 0 0 / 15%); */
+    height: 372px;
+
+}
+
+.btn-w-h {
+    width: 184px;
+    height: 39px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+{% comment %} .container {
+    margin: auto;
+    margin-bottom: 40px;
+
+
+    width: 75%;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    padding: 44px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+
+
+  } {% endcomment %}
+
+  .label-width{
+    width: 20%;
+  }
+
+  .search_container {
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 300px;
+
+
+    width: 60%;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    padding: 44px;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 1);
+    /* visibility: hidden; */
+    display: none;
+    background-color: #ffffff;
+
+  }
+  .verify_container{
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 300px;
+
+
+    width: 60%;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    padding: 44px;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 1);
+    /* visibility: hidden; */
+    {% comment %} display: none; {% endcomment %}
+    background-color: #ffffff;
+  }
+
+  .search_container2 {
+
+    /* display: none; */
+    /* margin: auto; */
+    margin-bottom: 40px;
+    /* margin-left: 300px; */
+    width: 95%;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    padding: 44px;
+    /* padding-left: 70px; */
+    /* padding-right: 70px; */
+    box-shadow: 0 1px 8px rgb(0 0 0);
+    background-color: #ffffff;
+  }
+
+
+
+
+  .col-md-3
+  {
+  display: inline-block;
+  margin-left:-4px;
+  }
+  .carousel-indicators .active {
+  background-color: blue;
+  }
+  .col-md-3 img{
+  width: 170px;
+  height: 200px;
+  }
+  body .carousel-indicator li{
+  background-color: blue;
+  }
+  body .carousel-indicators{
+  bottom: -40px;
+  }
+  .carousel-indicators li {
+  
+  
+      background-color: #7270fc;
+  }
+  body .carousel-control-prev-icon,
+  body .carousel-control-next-icon{
+  background-color: blue;
+  }
+  .carousel-control-prev,
+  .carousel-control-next{
+  top: auto;
+  bottom: auto;
+  padding-top: 222px;
+  }
+  body .no-padding{
+  padding-left: 0,
+  padding-right: 0;
+  }
+{% endblock %}
+{% load static %}
+{% block body %}
+
+<div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">FSC</div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list p-f">
+        <li>
+            <a href="javascript:searchOrder()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="links_name">SEARCH RECORDS</span>
+            </a>
+            <span class="tooltip">SEARCH RECORDS</span>
+          </li>
+        {% comment %} <li>
+            <a href="javascript:addOrder()">
+
+                <i class="fa-solid fa-plus"></i>
+                <span class="links_name">ADD RECORD</span>
+            </a>
+            <span class="tooltip">ADD RECORD</span>
+        </li> {% endcomment %}
+
+        {% comment %} <li>
+            <a href="javascript:addOrder()">
+
+                <i class="fa-solid fa-list-radio"></i>
+                <span class="links_name">View Orders</span>
+            </a>
+            <span class="tooltip">VIEW ORDER</span>
+        </li> {% endcomment %}
+        
+      
+        <!-- <li>
+            <a href="#">
+                <i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+        </li> -->
+        <li class="profile">
+            <div class="profile-details">
+                <img src="{{user.userimg.url}}" alt="profileImg">
+                <div class="name_job">
+                    <div class="name">{{user.first_name}}</div>
+                    <div class="job">Distributor</div>
+                </div>
+            </div>
+            <a href="{% url 'handleLogout' %}">
+                <i class='bx bx-log-out' href="{% url 'handleLogout' %}" id="log_out" style="color: #ffffff;"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="container">
+    <!--Slideshow starts here -->
+    {% for product, range, nSlides in allProds %}
+    <h5 class="my-4">Flash Sale On {{product.0.product_category}} - Recommended Items</h5>
+    <div class="row">
+        <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo{{forloop.counter}}" data-slide-to="0" class="active"></li>
+                {% for i in range %}
+                <li data-target="#demo{{forloop.parentloop.counter}}" data-slide-to="{{i}}"></li>
+                {% endfor %}
+            </ul>
+            <div class="container carousel-inner no-padding">
+                <div class="carousel-item active">
+                    {% for i in product %}
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                        <div class="card align-items-center" style="width: 18rem;">
+                            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" id="namepr{{i.id}}">{{i.product_name}}</h5>
+                            
+                                <p class="card-text">{{i.desc|slice:"0:53"}}...</p>
+                                <h6 class="card-title" >Price: <span id="pricepr{{i.id}}">{{i.product_price}}</span></h6>
+                                <span id="divpr{{i.id}}" class="divpr">
+                                    <button id="pr{{i.id}}" class="btn btn-primary cart" style="border-radius: 20px;">Add To Cart</button>
+                                </span>
+                                <a href="/products/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-primary cart" style="border-radius: 20px;">QuickView</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+                </div>
+                <div class="carousel-item">
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- left and right controls for the slide -->
+        <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo{{forloop.counter}}" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+    <div class="search_container" id="search_container" style="display: none">
+        {% comment %} <img src="{{user.userimg.url}}" alt="" srcset=""> {% endcomment %}
+        
+        
+        <form action="/distributor" method="POST">
+        {% csrf_token%}
+        <h4 class="text-center" style="margin-bottom: 40px; font-size: 18px;">Enter Tracking ID Below</h4>
+        <!-- <form> -->
+        <div class="form-row">
+          <div class="col text-center">
+
+            <input type="text" id="search_input" name="search_input" class="form-control text-center"
+              placeholder="Enter Food Tracking ID" style="  width: 100%; margin-bottom: 20px;
+      height: 40px; font-size: 13px;" required>
+
+            <button type="submit"
+              id="searchrecordbtn"  name="searchrecordbtn" class=" btn btn-primary btn-sm btn-w-h modal-linear-bg-btn" style="width: 165px; margin: 0 0 0px 29px;
+           font-size: 12px;" onclick="verifyDetails()">Search</button>
+       
+
+          </div>
+          
+          
+        </div>
+    </form> 
+
+      </div>
+
+
+
+   
+
+
+ 
+        <div class="verify_container" id="verify_container" style="display: None">
+            <h3 class="text-center">Verify Food Details:</h3>
+            <br>
+            {% comment %} <form action="/distributor" method="POST"> {% endcomment %}
+                {% csrf_token %}
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product ID</span>
+
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="prodid" name="prodid" aria-describedby="inputGroup-sizing-sm" value="{{Oprodid}}">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Name</span>
+                    <span id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ocropname}}</span>
+                    
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Quantity</span>
+                    <span id="cropqt" name="cropqt" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ocropqt}}</span>
+                    
+                </div>
+                
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Selling Price</span>
+                    <span id="cropprice" name="cropprice" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ocropprice}}</span>
+                    
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Selling Date</span>
+                    <span id="sdate" name="sdate" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Osdate}}</span>
+                    
+                </div>
+
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer Name</span>
+                    <span id="farmername" name="farmername" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofname}}</span>
+                </div>
+                {% comment %} <div class="input-group mb-3">
+                    <label class="input-group-text label-width" for="inputGroupFile01">Upload Crop Image</label>
+                    <input type="file" class="form-control" name="imgfile" id="inputGroupFile01">
+                </div> {% endcomment %}
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's KYC ID</span>
+                    <span id="fkycid" name="fkycid" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofkycid}}</span>
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Address</span>
+                    <span id="fcity" name="fcity" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofaddress}}</span>
+                </div>
+                {% comment %} <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's State</span>
+                    <span id="fstate" name="fstate" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofstate}}</span>
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Pincode</span>
+                    <span id="fpincode" name="fpincode" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofpincode}}</span>
+                </div> {% endcomment %}
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Contact No</span>
+                    <span id="fcontact" name="fcontact" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">+91 {{Ofcontact}}</span>
+                </div>
+
+                {% comment %} <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor Name</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="distributorname" name="distributorname" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's kyc</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="dkycid" name="dkycid" aria-describedby="inputGroup-sizing-sm">
+                </div>
+    
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's Address</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="daddress" name="daddress" aria-describedby="inputGroup-sizing-sm">
+                </div> {% endcomment %}
+                {% comment %} <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's State</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="dstate" name="dstate" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's Pincode</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="dpincode" name="dpincode" aria-describedby="inputGroup-sizing-sm">
+                </div> {% endcomment %}
+                {% comment %} <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's contact</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" id="dcontact" name="dcontact" aria-describedby="inputGroup-sizing-sm">
+                </div> {% endcomment %}
+    
+                {% comment %} <button class="btn btn-outline-secondary" type="submit" >Verify and Submit</button> {% endcomment %}
+                    
+                </div>
+            {% endblock %}
+
+
+{% block js %}
+    <script>
+     function addOrder() {
+            // document.getElementById('search_container').style.visibility= "visible";
+            document.getElementById('search_container').style.display= "block";
+        }
+     function searchOrder() {
+            // document.getElementById('search_container').style.visibility= "visible";
+            document.getElementById('search_container').style.display= "block";
+            document.getElementById('container').style.display= "none";
+           
+        }
+    {% comment %} function verifyDetails() {
+        document.getElementById('verify_container').style.display= "block";
+            document.getElementById('verify_container').style.display= "block";
+        } {% endcomment %}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"></script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+    
+
+    <script src="{%static '/js/cart.js'%}"></script>
+{% endblock %}

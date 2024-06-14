@@ -1,0 +1,566 @@
+ {% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/User/side-menu.css' %}">
+    <script src="https://kit.fontawesome.com/7507e36a2a.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <title>Admin</title>
+    
+  </head>
+  <style>
+    .container {
+        margin: auto;
+        margin-bottom: 40px;
+  
+  
+        width: 75%;
+
+        background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 15%);
+}
+        {% comment %} /* border: 3px solid black; */
+        border-radius: 15px;
+        padding: 44px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 1);
+        background-color: #ffffff;
+  
+      } {% endcomment %}
+    .search_container {
+        margin: auto;
+        margin-bottom: 40px;
+  
+  
+        width: 75%;
+        /* border: 3px solid black; */
+        background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 15%);
+  
+      }
+
+      .label-width{
+        width: 20%;
+      }
+      .nav-item a{
+        color: #ffffff;
+      }
+
+      .header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+.header .box{
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 20px;
+  color: #1e7fb0;
+  {% comment %} box-shadow: 10px 10px rgba(0,0,0,0.2); {% endcomment %}
+  text-align: center;
+}
+.header .box hr{
+  border-top: 2px solid #a2a2a2;
+  margin: 3px;
+}
+.header .box input{
+  width: 100%;
+  margin-bottom: 3px;
+  height: 50px;
+  padding: 3px;
+  resize: vertical;
+}
+.header .box .qrcode{
+  padding: 3px;
+
+}
+.header .box .sqrcode{
+  padding: 3px;
+  margin-left: 15px;
+}
+.header .box button{
+  width: 100%;
+  height: 35px;
+  background: #1e7fb0;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+      {% comment %} .select2-container .select2-selection--single{
+        height:34px !important;
+    }
+    .select2-container--default .select2-selection--single{
+             border: 1px solid #ccc !important; 
+         border-radius: 0px !important; 
+    } {% endcomment %}
+  </style>
+  <body>
+
+    <nav class="navbar navbar-expand-lg"
+    style="background: #003a55;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">FSC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 20px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+     
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">FSC</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list p-f">
+            <li>
+                <a href="javascript:searchProduct()">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span class="links_name">SEARCH PRODUCT</span>
+                </a>
+                <span class="tooltip">SEARCH PRODUCT</span>
+              </li>
+            <li>
+
+
+                <a href="javascript:addProduct()">
+    
+                    <i class="fa-solid fa-plus"></i>
+                    <span class="links_name">ADD PRODUCT</span>
+                </a>
+                <span class="tooltip">ADD PRODUCT</span>
+            </li>
+          
+            <!-- <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li> -->
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="./img/face-1.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Suraj</div>
+                        <div class="job">ADMIN</div>
+                    </div>
+                </div>
+                <a href="/admin_login.html">
+                    <i class='bx bx-log-out' href="/admin_login.html" id="log_out" style="color: #ffffff;"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container" id="container">
+        <h5 class="text-center">Adding Product and Farmer Details:</h5>
+        <br>
+        <form action="{% url 'home' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product ID</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="prodid" name="prodid" aria-describedby="inputGroup-sizing-sm" onchange="generateQr()">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Name</span>
+                
+	            {% comment %} <select class="form-control input-select2" id="inputGroup-sizing-sm">
+                    <option>Car m</option> 
+                    <option>Bike</option> 
+                    <option>Scooter</option> 
+                    <option>Cycle</option> 
+                    <option>Horse</option> 
+	            </select> {% endcomment %}
+                <input type="text" class="form-control" aria-label="Sizing example input" id="cropname" name="cropname" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmername" name="farmername" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Address</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmeraddress" name="farmeraddress" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="productname" name="productname" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Price Per Piece</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="productprice" name="productprice" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Category</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="productcategory" name="productcategory" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product SubCategory</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="productsubcategory" name="productsubcategory" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Quantity</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="productquantity" name="productquantity" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Description</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="productdesc" name="productdesc" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Manufacturing Date</span>
+                <input type="date" class="form-control" aria-label="Sizing example input" id="manudate" name="manudate" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Processes Used</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="processname" name="processname" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            {% comment %} {{ form.as_p }} {% endcomment %}
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" name="image" id="image">Product Image</span> 
+                {% comment %} <input type="file" id="image" class="form-control" name="image"> {% endcomment %}
+                <input type="file" name="upload_img" id="upload_img">
+            </div>
+
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Category</span>
+                <select id="cropcat" name="cropcat" class="form-select" aria-label="Default select example">
+                    <option selected>Select Crop Category</option>
+                    <option value="1">Pulses & Grains</option>
+                    <option value="3">Vegetable</option>
+                  </select>
+                
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Quantity</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="cropqt" name="cropqt" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Fertilizer Used:</span>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                    No
+                    </label>
+                </div>
+            </div>
+ {% endcomment %}
+            {% comment %} <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile01">Upload Crop Image</label>
+                <input type="file" class="form-control" name="imgfile" id="inputGroupFile01">
+              </div> {% endcomment %}
+{% comment %}             
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Date of Purchase</span>
+                <input type="date" class="form-control" aria-label="Sizing example input" id="sdate" name="sdate" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+           
+            
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer KYC ID</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmerkycid" name="farmerkycid" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer Contact Number</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmercontact" name="farmercontact" aria-describedby="inputGroup-sizing-sm">
+            </div> {% endcomment %}
+            
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's State</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmerstate" name="farmerstate" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Pincode</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmerpincode" name="farmerpincode" aria-describedby="inputGroup-sizing-sm">
+            </div> {% endcomment %}
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Distributor Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="distributorname" name="distributorname" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Distributor's kyc</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="dkycid" name="dkycid" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Distributor's City</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="dcity" name="dcity" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Distributor's State</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="dstate" name="dstate" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Distributor's Pincode</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="dpincode" name="dpincode" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Distributor's contact</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="dcontact" name="dcontact" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Retailor Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="retailername" name="retailername" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Retailor's kyc</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="rkycid" name="rkycid" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Retailor's City</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="rcity" name="rcity" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Retailor's State</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="rstate" name="rstate" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Retailor's Pincode</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="rpincode" name="rpincode" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Retailor's contact</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="rcontact" name="rcontact" aria-describedby="inputGroup-sizing-sm">
+            </div> {% endcomment %}
+
+            <button class="btn btn-outline-secondary" name="addrecordbtn" type="submit">Add Record</button>
+                
+        </form>
+    </div>
+
+    <div class="header">
+        <div class="box">
+          <h1>Successfuly Generated</h1>
+          <hr>
+          <div class="sqrcode"></div>
+          <div class="qrcode"></div>
+        </div>
+      </div>
+
+    <div class="search_container" id="search_container">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Enter Uniqueid:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="s_farmerid" name="s_farmerid" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <button class="btn btn-outline-secondary" type="submit" name="searchbtn">Search Record</button>
+            <br>
+        </form>            
+    </div>
+
+
+    <div class="search_container" id="search_container">
+        <h3 class="text-center">Digitally signed document.getElementById:</h3>
+        <form>
+            {% csrf_token %}
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product ID</span>
+
+                <input type="text" class="form-control" aria-label="Sizing example input" id="farmerid" name="farmerid" aria-describedby="inputGroup-sizing-sm" value="{{Oprodid}}">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Used</span>
+                <span id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ocropname}}</span>
+                
+            </div>
+            
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer Name</span>
+                <span id="cropqt" name="cropqt" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofname}}</span>
+                
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer Address</span>
+                <span id="cropprice" name="cropprice" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofaddress}}</span>
+                
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Name</span>
+                <span id="sdate" name="sdate" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Oprodname}}</span>
+                
+            </div>
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Quantity</span>
+                <span id="farmername" name="farmername" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Oprodqt}}</span>
+            </div> {% endcomment %}
+            {% comment %} <div class="input-group mb-3">
+                <label class="input-group-text label-width" for="inputGroupFile01">Upload Crop Image</label>
+                <input type="file" class="form-control" name="imgfile" id="inputGroupFile01">
+            </div> {% endcomment %}
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Manufacturing Date</span>
+                <span id="fkycid" name="fkycid" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Omanudate}}</span>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Processes Used</span>
+                <span id="faddress" name="faddress" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Oprocessname}}</span>
+            </div>
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's State</span>
+                <span id="fstate" name="fstate" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofstate}}</span>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Pincode</span>
+                <span id="fpincode" name="fpincode" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Ofpincode}}</span>
+            </div> {% endcomment %}
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer's Contact No</span>
+                <span id="fcontact" name="fcontact" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">+91 {{Ofcontact}}</span>
+            </div>
+             {% endcomment %}
+            
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor Name</span>
+                <span id="distributorname" name="distributorname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Odistributorname}}</span>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's kyc</span>
+                <span id="dkycid" name="dkycid" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Odkycid}}</span>
+            </div>
+            
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's Address</span>
+                <span id="daddress" name="daddress" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Odaddress}}</span>
+            </div>
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's State</span>
+                <span id="dstate" name="dstate" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Odstate}}</span>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's Pincode</span>
+                <span id="dpincode" name="dpincode" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Odpincode}}</span>
+            </div> {% endcomment %}
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Distributor's contact</span>
+                <span id="dcontact" name="dcontact" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">020 {{Odcontact}}</span>
+            </div>
+            
+            
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Retailor Name</span>
+                <span id="retailername" name="retailername" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Oretailername}}</span>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Retailor's kyc</span>
+                <span id="rkycid" name="rkycid" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Orkycid}}</span>
+            </div>
+            
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Retailor's Address</span>
+                <span id="raddress" name="raddress" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Oraddress}}</span>
+            </div>
+            {% comment %} <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Retailor's State</span>
+                <span id="rstate" name="rstate" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Orstate}}</span>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Retailor's Pincode</span>
+                <span id="rpincode" name="rpincode" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{Orpincode}}</span>
+            </div> {% endcomment %}
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text label-width" id="inputGroup-sizing-sm">Retailor's contact</span>
+                <span id="rcontact" name="rcontact" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">020 {{Orcontact}}</span>
+            </div>
+            <button class="btn btn-outline-secondary" name="addrecordbtn" type="button">Print</button>
+                
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="{%static '/User/side-menu.js'%}"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <!-- MDB -->
+        {% comment %} <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script> {% endcomment %}
+  
+        <script>
+            var qrcode = new QRCode(document.querySelector(".qrcode"));
+            qrcode.makeCode("111")
+            function generateQr(){  qrcode.makeCode(document.querySelector("prodid").value)
+            }
+        </script>
+        <script>
+         function addProduct() {
+                document.getElementById('search_container').style.display= "none";
+                document.getElementById('container').style.display= "block";
+            }
+         function searchProduct() {
+                document.getElementById('container').style.display= "none";
+                document.getElementById('search_container').style.display= "block";
+            }
+        </script>
+        <script>
+            $('.select2').select2();
+        </script>
+    
+  
+  
+    </body>
+</html>

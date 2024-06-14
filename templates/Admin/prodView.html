@@ -1,0 +1,163 @@
+{% extends 'Admin/basic.html' %}
+
+{% block title%} {{product.product_name}} - My Awesome Cart{% endblock %}
+{% block css %}
+.label-width{
+    width: 47%;
+  }
+
+
+{% endblock %}
+{% block body %}
+{% load static %}
+<div class="container my-4">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="row">
+        <img src="/media/{{product.image}}" width="233px" height="385px">
+    </div>
+        
+
+    </div>
+
+    <div class="col-md-8">
+        <h5>{{product.product_name}}</h5>
+        <p><b>Rs.{{product.product_price}} /Piece/KG</b></p>
+        <p>Description - {{product.desc}}</p>
+
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+              <div class="col" style="padding: 0;">
+               <div class="p-3 border bg-light">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Product Id</span>
+                    <span id="prodid" name="prodid" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{product.product_id}}</span>
+                    
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Crop Used</span>
+                    <span id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{product.cropused}}</span>
+                    
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Farmer Name</span>
+                    <span id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{product.farmer_name}}</span>
+                    
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Place</span>
+                    <span id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{product.farmer_address}}</span>
+                    
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text label-width" id="inputGroup-sizing-sm">Available Quantity</span>
+                    <span id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm">{{product.product_qt}}</span>
+                    
+                </div>
+                {% comment %} <p>Crop Used - {{product.cropused}}</p> {% endcomment %}
+                {% comment %} <p>Farmer Name- {{product.farmer_name}}</p>
+                <p>Place where crop grown- {{product.farmer_address}}</p> {% endcomment %}
+                </div>
+              </div>
+              <div class="col" style="padding: 0;">
+                <div class="p-3 border bg-light">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text label-width" id="inputGroup-sizing-sm">Processes Used</span>
+                        <p id="cropname" name="cropname" class="form-control" aria-label="small" aria-describedby="inputGroup-sizing-sm" style="height: 26vh;
+                        width: 100%;">{{product.process_used}}</p>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        
+        
+        
+        
+
+        
+
+        <div class="row">
+            
+          <form action="/products/{{product.id}}" method="POST">
+            {% csrf_token %}
+            <input type="text" class="form-control" aria-label="Sizing example input" id="prodid" name="prodid" aria-describedby="inputGroup-sizing-sm" value="{{product.product_id}}" style="display: none;"/>
+            <input type="text" class="form-control" aria-label="Sizing example input" id="product_id" name="product_id" aria-describedby="inputGroup-sizing-sm" value="{{product.id}}" style="display: none;"/>
+            
+            <button id="addrecordbtn" name="addrecordbtn" class="btn btn-primary" style="
+            margin-top: 10px;
+            width: 16%;
+            margin-left: 0!important;
+        ">Buy Now</button>
+          </form>        
+
+        </div>
+
+
+    </div>
+    </div>
+
+
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+
+{% block js %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script>
+    console.log('working');
+    
+    if(localStorage.getItem('cart') == null){
+    var cart = {};
+    }
+    
+    else
+    {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+    }
+    
+    $('.cart').click(function(){
+    
+    console.log('clicked');
+    var idstr = this.id.toString();
+    console.log(idstr);
+    if (cart[idstr] !=undefined){
+    cart[idstr] = cart[idstr] + 1;
+    }
+    else
+    {
+    cart[idstr] = 1;
+    }
+    console.log(cart);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+    });
+    $('#popcart').popover();
+    
+    document.getElementById("popcart").setAttribute('data-content', '<h5>Cart for your items in my shopping cart</h5>');
+    
+    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+      <script src="{%static '/js/cart.js'%}"></script>
+{% endblock %}

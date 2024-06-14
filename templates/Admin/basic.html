@@ -1,0 +1,396 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/User/side-menu.css' %}">
+    <script src="https://kit.fontawesome.com/7507e36a2a.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+<!-- Production version -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+    <title>{% block title%} {% endblock %}</title>
+</head>
+<style>
+  {% block css %} {% endblock %}
+
+    body{
+        background-color: #efefef;
+    }
+    .navbar {
+        margin-bottom: 85px;
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        margin-left: 77px;
+        color: #ffffff;
+    }
+
+    .nav-link {
+        font-weight: 500;
+    }
+
+    .btn-group {
+        padding: 10px;
+    }
+
+    .btn-left {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 32px;
+        border-radius: 20px;
+        font-size: 11px;
+
+    }
+
+    .modal-footer {
+        padding: 5px;
+    }
+
+    .btn-w-h {
+        height: 36px;
+        width: 82px;
+        height: 32px;
+        border-radius: 20px;
+        font-size: 11px;
+    }
+
+    .modal-body-kyc {
+        padding-top: 0;
+    }
+
+    .modal-body-plot {
+        padding-top: 0;
+    }
+
+    /* a.icon-block {
+        display:inline-block;
+        width: 0;
+        float:left;
+        text-align:center;
+        background: #1D1B31;
+    } */
+    .modal-linear-bg-btn {
+        width: 110px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 8px;
+        height: 42px;
+        text-align: center;
+        border: none;
+        background-size: 300% 100%;
+
+        border-radius: 50px;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .modal-linear-bg-btn:hover {
+        background-position: 100% 0;
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .modal-linear-bg-btn:focus {
+        outline: none;
+    }
+
+    .modal-linear-bg-btn {
+        /* background: linear-gradient(-135deg, #c850c0, #4158d0);
+       border: linear-gradient(-135deg, #c850c0, #4158d0); */
+        /* box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75); */
+        /* background: #457197; */
+        background-image: linear-gradient(to right, #667eea, #003a55, #6B8DD6, #003a55);
+
+    }
+
+    #welcome-section {
+        background-color: #efefef;
+        /* box-shadow: 0px 47px 39px rgb(0 0 0 / 15%); */
+        height: 372px;
+
+    }
+
+    .btn-w-h {
+        width: 184px;
+        height: 39px;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+
+
+</style>
+
+<body>
+
+
+
+
+    <!-- <nav class="navbar navbar-expand-lg"
+        style="background: linear-gradient(120deg, #ff6600, #f2f2f2, #009933); box-shadow: 0 8px 8px -4px lightblue;"> -->
+    <!-- <nav class="navbar navbar-expand-lg"
+        style="background: linear-gradient(145deg, #71b7e6, #9b59b6); box-shadow: 0 8px 8px -4px lightblue;"> -->
+    <nav class="navbar navbar-expand-lg"
+        style="background: #003a55;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">FSC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'distributor' %}">Home</a>
+                    </li>
+
+
+                </ul>
+
+                {% if user.is_authenticated %}
+                <ul class="navbar-nav mr-2">
+                    <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus.">
+
+
+  Cart(<span id="cart">0</span>)
+</button>
+
+                  <li class="nav-item dropdown">
+                  {% comment %} <li class="nav-item dropdown">{{user.user_address}}</li> {% endcomment %}
+                    <a class="nav-link dropdown-toggle" href='#' id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                      Welcome {{request.user}}</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="{% url 'handleLogout' %}">Logout</a>
+        
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              {% else %}
+              <!-- Button to  trigger Login modal -->
+              <button type="button" class="btn btn-primary mr-2 linear-bg-btn" data-toggle="modal" data-target="#loginModal">
+                Login
+              </button>
+        
+              <button type="button" class="btn btn-primary mr-2 linear-bg-btn" data-toggle="modal" data-target="#signupModal">
+                SignUp
+              </button>
+              {% endif %}
+
+            </div>
+        </div>
+
+    </nav>
+
+    {% block body %} {% endblock %}
+
+    
+
+
+
+       <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <script src="{%static '/User/side-menu.js'%}"></script>
+    <script src="{%static '/js/cart.js'%}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    {% block js %} {% endblock %}
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <script>
+    
+// Find out the cart items from localStorage
+if (localStorage.getItem('cart') == null) {
+    var cart = {};
+} else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    updateCart(cart);
+}
+
+// If the add to cart button is clicked, add/increment the item
+//$('.cart').click(function() {
+    $('.divpr').on('click', 'button.cart', function(){
+    var idstr = this.id.toString();
+    if (cart[idstr] != undefined) {
+        qty = cart[idstr][0] + 1;
+    } else {
+        qty = 1;
+        name = document.getElementById('name'+idstr).innerHTML;
+        price = document.getElementById('price'+idstr).innerHTML;
+        cart[idstr] = [qty, name, parseInt(price)];
+
+    }
+    updateCart(cart);
+
+});
+
+//Add Popover to cart
+$('#popcart').popover();
+updatePopover(cart);
+
+function updatePopover(cart) {
+    console.log('We are inside updatePopover');
+    var popStr = "";
+    popStr = popStr + "<h5> Your Order Cart </h5><div class='mx-2 my-2'>";
+    var i = 1;
+    for (var item in cart) {
+        popStr = popStr + "<b>" + i + "</b>. ";
+        popStr = popStr + document.getElementById('name' + item).innerHTML.slice(0, 19) + "... Qty: " + cart[item][0] + '<br>';
+        i = i + 1;
+
+    }
+
+    popStr = popStr + "</div> <a href='/checkout'><button class='btn btn-primary' id ='checkout'>Checkout</button></a> <button class='btn btn-primary' onclick='clearCart()' id ='clearCart'>Clear Cart</button>     "
+    console.log(popStr);
+    document.getElementById('popcart').setAttribute('data-content', popStr);
+    $('#popcart').popover();
+
+}
+
+function clearCart() {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    for (var item in cart) {
+        document.getElementById('div' + item).innerHTML = '<button id="' + item + '" class="btn btn-primary cart">Add To Cart</button>'
+    }
+    localStorage.clear();
+    cart = {};
+    updateCart(cart);
+
+
+}
+
+function updateCart(cart) {
+    var sum = 0;
+    for (var item in cart) {
+        sum = sum + cart[item][0];
+        document.getElementById('div' + item).innerHTML = "<button id='minus" + item + "' class='btn btn-primary minus'>-</button> <span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn btn-primary plus'> + </button>";
+
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = sum;
+    console.log(cart);
+    updatePopover(cart);
+}
+
+// If plus or minus button is clicked, change the cart as well as the display value
+$('.divpr').on("click", "button.minus", function() {
+    a = this.id.slice(7, );
+    cart['pr' + a][0] = cart['pr' + a][0] - 1;
+    cart['pr' + a][0] = Math.max(0, cart['pr' + a][0]);
+    if (cart['pr' + a][0] == 0){
+        document.getElementById('divpr' + a).innerHTML = '<button id="pr'+a+'" class="btn btn-primary cart">Add to Cart</button>';
+        delete cart['pr'+a];
+    }
+    else{
+        document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    }
+    updateCart(cart);
+
+});
+
+$('.divpr').on("click", "button.plus", function() {
+    a = this.id.slice(6, );
+    cart['pr' + a][0] = cart['pr' + a][0] + 1;
+    document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    updateCart(cart);
+});
+  </script>
+
+
+
+
+
+
+
+
+
+  <script>
+    if (localStorage.getItem('cart') == null) {
+        var cart = {};
+    } else {
+        cart = JSON.parse(localStorage.getItem('cart'));
+    
+    }
+    console.log(cart);
+    var sum = 0;
+    var totalPrice = 0;
+    
+    if ($.isEmptyObject(cart)) {
+        //if object is empty
+        mystr = `<p>Your cart is empty, please add some items to your cart before checking out!</p>`
+        $('#items').append(mystr);
+    } else {
+        for (item in cart) {
+            let name = cart[item][1];
+            let qty = cart[item][0];
+            let itemPrice = cart[item][2];
+            sum = sum + qty;
+            totalPrice = totalPrice + qty* itemPrice;
+            mystr = `<li class="list-group-item d-flex justify-content-between align-items-center">
+                        ${name}
+                        <span class="badge badge-primary badge-pill">${qty}</span>
+                    </li>`
+            $('#items').append(mystr);
+        }
+    
+    }
+    
+    document.getElementById('cart').innerHTML = sum;
+    document.getElementById('totalPrice').innerHTML = totalPrice;
+    $('#itemsJson').val(JSON.stringify(cart));
+    {% if thank %}
+    alert('Thanks for ordering with us. Your order is is {{id}}. Use it to track your order using our order tracker');
+    localStorage.clear();
+    document.location = "/shop";
+    {% endif %}
+    $('#amount').val($('#totalPrice').html())
+    </script>
+
+
+
+
+  </body>
+</html>

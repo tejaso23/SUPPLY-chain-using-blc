@@ -1,0 +1,1101 @@
+Product_id,Product_Name,Crop_Used,Location,Purchased_Or_Not,Crop_demand
+1,Corn Flour,Corn,Ladakh,1,91
+2,Potato Juice,Potato,Punjab,0,29
+3,Banana Juice,Banana,Himachal Pradesh,1,40
+4,Grapes Juice,Grapes,Madhya Pradesh,1,86
+5,Jaggery,Sugarcane,Jharkhand,1,50
+6,Peanut Oil,Peanut,Madhya Pradesh,1,43
+7,Soybean Oil,Soybean,Kerala,0,33
+8,Sugar,Sugarcane,Chhattisgarh,1,21
+9,Almond Milk,Almond,Andhra Pradesh,1,75
+10,Thyme,Thyme,Chhattisgarh,1,94
+11,Peanut Oil,Peanut,Uttarakhand,0,43
+12,Tomato Ketchup,Tomato,Kerala,0,31
+13,Mint,Mint,Uttar Pradesh,1,100
+14,Apple Juice,Apple,Punjab,0,18
+15,Mustard,Mustard,Jharkhand,1,41
+16,Cumin,Cumin,West Bengal,1,46
+17,Thyme,Thyme,Himachal Pradesh,0,25
+18,Mustard,Mustard,Chhattisgarh,0,51
+19,Potato Juice,Potato,Goa,0,17
+20,Basil,Basil,Odisha,1,80
+21,Green Onion,Onion,Ladakh,0,91
+22,Lemon Juice,Lemon,Uttar Pradesh,1,54
+23,Peanut Oil,Peanut,West Bengal,1,58
+24,Sesame Seeds,Sesame,Jharkhand,0,20
+25,Red Lentil,Red Lentil,Rajasthan,1,100
+26,Banana Juice,Banana,Tamil Nadu,1,11
+27,Corn Flour,Corn,Karnatak,0,97
+28,Yellow Lentil,Yellow Lentil,Tamil Nadu,1,16
+29,Mustard,Mustard,Punjab,1,43
+30,Sugar,Sugarcane,Maharashtra,0,50
+31,Turmeric,Turmeric,Haryana,0,20
+32,Mint,Mint,Goa,0,42
+33,Mustard Oil,Mustard,Tamil Nadu,1,51
+34,Mango Juice,Mango,Jammu and Kashmir,1,56
+35,Tomato Ketchup,Tomato,Chhattisgarh,0,17
+36,Cucumber Pickle,Cucumber,Jammu and Kashmir,0,54
+37,Orange Juice,Orange,Gujarat,1,39
+38,Spinach Juice,Spinach,Ladakh,0,32
+39,Jaggery,Sugarcane,Tamil Nadu,0,13
+40,Coconut Oil,Coconut,Jammu and Kashmir,1,82
+41,Mango Juice,Mango,Uttar Pradesh,0,11
+42,Red Onion,Onion,Goa,1,52
+43,Red Onion,Onion,Jammu and Kashmir,1,16
+44,Onion,Onion,Jharkhand,1,77
+45,Red Onion,Onion,Goa,0,66
+46,Potato Juice,Potato,Assam,1,47
+47,Peanut Butter,Peanut,Uttarakhand,0,67
+48,Corn Flour,Corn,Himachal Pradesh,1,8
+49,Tomato Ketchup,Tomato,Jammu and Kashmir,1,12
+50,Basil,Basil,Himachal Pradesh,1,81
+51,Red Onion,Onion,Jammu and Kashmir,1,94
+52,Corn Oil,Corn,Uttarakhand,1,86
+53,Garlic,Garlic,Madhya Pradesh,1,35
+54,Rosemary,Rosemary,Chhattisgarh,1,33
+55,Rosemary,Rosemary,Jammu and Kashmir,1,4
+56,Cotton T-Shirt,Cotton,Gujarat,1,14
+57,Red Onion,Onion,Uttarakhand,1,53
+58,Banana Juice,Banana,Odisha,1,48
+59,Pineapple Juice,Pineapple,Haryana,0,42
+60,Pineapple Juice,Pineapple,Karnatak,0,32
+61,Sesame Seeds,Sesame,Karnatak,0,75
+62,Green Onion,Onion,Goa,0,87
+63,Spinach Juice,Spinach,Jammu and Kashmir,0,25
+64,Rice,Rice,Assam,0,79
+65,Mango Juice,Mango,Uttar Pradesh,1,63
+66,Green Onion,Onion,Karnatak,0,82
+67,Almond Milk,Almond,Punjab,1,20
+68,Lentil,Lentil,West Bengal,0,82
+69,Orange Juice,Orange,Jharkhand,1,40
+70,Yellow Onion,Onion,Rajasthan,1,93
+71,Coconut Oil,Coconut,Ladakh,1,33
+72,Yellow Onion,Onion,Assam,1,87
+73,Lentil,Lentil,Haryana,1,35
+74,Tomato Ketchup,Tomato,Kerala,1,11
+75,Basil,Basil,Maharashtra,0,7
+76,Red Lentil,Red Lentil,Assam,1,72
+77,Tomato Ketchup,Tomato,Uttarakhand,0,84
+78,Wheat Flour,Wheat,Ladakh,0,15
+79,Mustard Seeds,Mustard,West Bengal,0,48
+80,Cotton T-Shirt,Cotton,Uttar Pradesh,0,81
+81,Coriander,Coriander,Telangana,0,86
+82,Yellow Lentil,Yellow Lentil,Rajasthan,0,4
+83,Green Onion,Onion,Karnatak,1,82
+84,Thyme,Thyme,Gujarat,0,77
+85,Red Onion,Onion,Assam,1,61
+86,Sesame Seeds,Sesame,Uttar Pradesh,0,31
+87,Ginger,Ginger,West Bengal,1,86
+88,Cotton T-Shirt,Cotton,Uttarakhand,1,33
+89,Ginger,Ginger,Chhattisgarh,0,45
+90,Grapes Juice,Grapes,Telangana,0,7
+91,Peanut Butter,Peanut,Ladakh,0,65
+92,Yellow Lentil,Yellow Lentil,Telangana,0,44
+93,Mango Juice,Mango,Rajasthan,1,79
+94,Banana Juice,Banana,Chhattisgarh,1,48
+95,Garlic,Garlic,Maharashtra,1,52
+96,Mustard Seeds,Mustard,Andhra Pradesh,1,92
+97,Grapes Juice,Grapes,Andhra Pradesh,0,7
+98,Mango Juice,Mango,Chhattisgarh,0,80
+99,Green Lentil,Green Lentil,Telangana,0,48
+100,Spinach Juice,Spinach,Karnatak,0,47
+101,Almond Milk,Almond,Haryana,1,15
+102,Sugar,Sugarcane,Uttar Pradesh,0,11
+103,Cumin,Cumin,Andhra Pradesh,1,70
+104,Cotton T-Shirt,Cotton,Uttar Pradesh,0,68
+105,Mango Juice,Mango,Karnatak,0,32
+106,Onion,Onion,Jharkhand,1,97
+107,Rosemary,Rosemary,Uttar Pradesh,1,17
+108,Green Lentil,Green Lentil,West Bengal,1,39
+109,Peanut,Peanut,Uttarakhand,1,39
+110,Mustard Seeds,Mustard,Chhattisgarh,0,53
+111,Rosemary,Rosemary,Rajasthan,1,19
+112,Mint,Mint,Uttarakhand,0,79
+113,Tomato Ketchup,Tomato,Rajasthan,1,42
+114,Jaggery,Sugarcane,Rajasthan,0,42
+115,Potato Juice,Potato,Punjab,0,47
+116,Peanut Oil,Peanut,Rajasthan,0,26
+117,Orange Juice,Orange,Gujarat,0,93
+118,Jaggery,Sugarcane,Punjab,1,83
+119,Banana Juice,Banana,Tamil Nadu,0,18
+120,Mustard Oil,Mustard,Goa,0,23
+121,Peanut,Peanut,Gujarat,1,43
+122,Potato Juice,Potato,Andhra Pradesh,0,17
+123,Almond Milk,Almond,Madhya Pradesh,0,29
+124,Thyme,Thyme,Kerala,1,16
+125,Sesame Oil,Sesame,Uttarakhand,0,97
+126,Corn Flour,Corn,West Bengal,0,60
+127,Corn Flour,Corn,Odisha,0,4
+128,Spinach Juice,Spinach,Rajasthan,0,73
+129,Spinach Juice,Spinach,Uttarakhand,0,24
+130,Sugar,Sugarcane,Kerala,0,82
+131,Sesame,Sesame,Andhra Pradesh,0,46
+132,Cotton T-Shirt,Cotton,Odisha,1,15
+133,Rosemary,Rosemary,West Bengal,1,55
+134,Banana Juice,Banana,West Bengal,1,52
+135,Cumin,Cumin,Jharkhand,0,49
+136,Yellow Onion,Onion,Tamil Nadu,1,28
+137,Rosemary,Rosemary,Chhattisgarh,1,30
+138,Banana Juice,Banana,Maharashtra,1,69
+139,Ginger,Ginger,West Bengal,0,29
+140,Oregano,Oregano,Jharkhand,1,53
+141,Yellow Onion,Onion,Kerala,0,60
+142,Peanut Butter,Peanut,Jharkhand,1,8
+143,Cucumber Pickle,Cucumber,Ladakh,1,12
+144,Garlic,Garlic,Goa,0,43
+145,Corn Flour,Corn,Assam,0,8
+146,Peanut Butter,Peanut,Karnatak,1,58
+147,Peanut Oil,Peanut,Karnatak,1,34
+148,Green Lentil,Green Lentil,Andhra Pradesh,1,88
+149,Onion,Onion,Punjab,0,61
+150,Oregano,Oregano,Telangana,1,91
+151,Pineapple Juice,Pineapple,Telangana,1,53
+152,Lemon Juice,Lemon,Andhra Pradesh,1,63
+153,Grapes Juice,Grapes,Madhya Pradesh,1,36
+154,Turmeric,Turmeric,Chhattisgarh,1,17
+155,Tomato Ketchup,Tomato,Rajasthan,1,13
+156,Rice,Rice,Himachal Pradesh,0,1
+157,Pineapple Juice,Pineapple,Chhattisgarh,1,98
+158,Mustard Seeds,Mustard,Gujarat,1,50
+159,Wheat Flour,Wheat,Himachal Pradesh,1,90
+160,Mango Juice,Mango,Karnatak,1,14
+161,Cotton T-Shirt,Cotton,Himachal Pradesh,1,82
+162,Orange Juice,Orange,Uttarakhand,1,30
+163,Red Lentil,Red Lentil,Goa,1,43
+164,Cumin,Cumin,Jammu and Kashmir,1,94
+165,Oregano,Oregano,Jammu and Kashmir,1,93
+166,Grapes Juice,Grapes,Goa,0,9
+167,Turmeric,Turmeric,Punjab,1,53
+168,Peanut Oil,Peanut,Punjab,1,80
+169,Tomato Ketchup,Tomato,Kerala,0,52
+170,Rosemary,Rosemary,Jammu and Kashmir,1,26
+171,Coconut Oil,Coconut,Jharkhand,1,81
+172,Thyme,Thyme,Uttarakhand,0,66
+173,Cumin,Cumin,Haryana,1,94
+174,Soybean Oil,Soybean,Assam,1,30
+175,Basil,Basil,Maharashtra,1,40
+176,Cotton T-Shirt,Cotton,Odisha,1,16
+177,Peanut Butter,Peanut,Uttar Pradesh,0,6
+178,Garlic,Garlic,Uttarakhand,1,29
+179,Yellow Onion,Onion,Punjab,0,91
+180,Red Onion,Onion,Odisha,1,87
+181,Soybean Oil,Soybean,Tamil Nadu,1,6
+182,Lentil,Lentil,Gujarat,0,27
+183,Banana Juice,Banana,Telangana,0,44
+184,Peanut,Peanut,Ladakh,1,49
+185,Lentil,Lentil,Kerala,0,86
+186,Orange Juice,Orange,Gujarat,0,13
+187,Mustard,Mustard,Uttar Pradesh,1,30
+188,Soybean Oil,Soybean,Chhattisgarh,0,46
+189,Yellow Lentil,Yellow Lentil,Uttarakhand,1,56
+190,Basil,Basil,Himachal Pradesh,0,65
+191,Peanut Butter,Peanut,Goa,1,61
+192,Mustard Seeds,Mustard,Assam,1,67
+193,Mustard Oil,Mustard,Jammu and Kashmir,1,94
+194,Garlic,Garlic,Maharashtra,1,80
+195,Mint,Mint,Punjab,1,19
+196,Lentil,Lentil,Maharashtra,0,19
+197,Turmeric,Turmeric,Himachal Pradesh,1,41
+198,Cumin,Cumin,Madhya Pradesh,0,88
+199,Banana Juice,Banana,Goa,1,50
+200,Garlic,Garlic,Gujarat,0,3
+201,Onion,Onion,Karnatak,0,3
+202,Lentil,Lentil,Kerala,1,35
+203,Pineapple Juice,Pineapple,Ladakh,0,24
+204,Coriander,Coriander,Ladakh,1,75
+205,Coriander,Coriander,Chhattisgarh,0,95
+206,Turmeric,Turmeric,Andhra Pradesh,0,27
+207,Orange Juice,Orange,Jharkhand,0,91
+208,Black Lentil,Black Lentil,Telangana,1,64
+209,Mango Juice,Mango,Uttar Pradesh,0,53
+210,Oregano,Oregano,Ladakh,1,22
+211,Coriander,Coriander,Assam,1,41
+212,Mustard Oil,Mustard,Andhra Pradesh,0,75
+213,Jaggery,Sugarcane,Gujarat,0,30
+214,Onion,Onion,Karnatak,0,71
+215,Black Lentil,Black Lentil,Andhra Pradesh,1,88
+216,Red Onion,Onion,Kerala,1,23
+217,Tomato Ketchup,Tomato,Gujarat,1,64
+218,Pineapple Juice,Pineapple,Odisha,1,81
+219,Potato Juice,Potato,Odisha,1,39
+220,Apple Juice,Apple,Assam,1,49
+221,Ginger,Ginger,Maharashtra,1,73
+222,Onion,Onion,Odisha,1,76
+223,Mango Juice,Mango,Jammu and Kashmir,0,30
+224,Mustard Seeds,Mustard,Kerala,1,46
+225,Peanut,Peanut,Kerala,1,73
+226,Wheat Flour,Wheat,Odisha,0,57
+227,Jaggery,Sugarcane,Rajasthan,1,68
+228,Turmeric,Turmeric,Kerala,0,91
+229,Garlic,Garlic,Madhya Pradesh,1,77
+230,Yellow Onion,Onion,Rajasthan,0,87
+231,Sugar,Sugarcane,Karnatak,0,12
+232,Cotton T-Shirt,Cotton,Uttarakhand,0,94
+233,Peanut Oil,Peanut,Goa,0,62
+234,Lentil,Lentil,Chhattisgarh,0,13
+235,Peanut Butter,Peanut,Madhya Pradesh,0,79
+236,Red Onion,Onion,Assam,1,14
+237,Almond Milk,Almond,Gujarat,0,2
+238,Orange Juice,Orange,Karnatak,0,69
+239,Grapes Juice,Grapes,Maharashtra,0,21
+240,Garlic,Garlic,Kerala,1,69
+241,Yellow Lentil,Yellow Lentil,Chhattisgarh,1,55
+242,Turmeric,Turmeric,Andhra Pradesh,0,42
+243,Lentil,Lentil,Andhra Pradesh,0,19
+244,Apple Juice,Apple,Jammu and Kashmir,1,24
+245,Banana Juice,Banana,Himachal Pradesh,0,64
+246,Lemon Juice,Lemon,Ladakh,0,23
+247,Green Lentil,Green Lentil,Maharashtra,1,69
+248,Onion,Onion,Assam,1,6
+249,Jaggery,Sugarcane,Odisha,0,61
+250,Mango Juice,Mango,Uttar Pradesh,0,5
+251,Mustard Oil,Mustard,Chhattisgarh,0,75
+252,Mango Juice,Mango,Goa,1,12
+253,Wheat Flour,Wheat,Uttarakhand,0,46
+254,Rosemary,Rosemary,Rajasthan,1,39
+255,Cotton T-Shirt,Cotton,Haryana,0,66
+256,Spinach Juice,Spinach,Jammu and Kashmir,1,89
+257,Green Onion,Onion,Jammu and Kashmir,1,93
+258,Apple Juice,Apple,Gujarat,0,10
+259,Corn Oil,Corn,Madhya Pradesh,1,1
+260,Mustard Oil,Mustard,Odisha,1,29
+261,Mustard Seeds,Mustard,Jammu and Kashmir,1,31
+262,Spinach Juice,Spinach,Haryana,0,18
+263,Coriander,Coriander,Karnatak,1,3
+264,Mango Juice,Mango,Ladakh,1,53
+265,Banana Juice,Banana,Himachal Pradesh,0,82
+266,Apple Juice,Apple,Maharashtra,1,46
+267,Corn Oil,Corn,Jammu and Kashmir,0,62
+268,Garlic,Garlic,Haryana,0,34
+269,Ginger,Ginger,Chhattisgarh,1,61
+270,Turmeric,Turmeric,Ladakh,0,33
+271,Onion,Onion,Uttar Pradesh,1,88
+272,Banana Juice,Banana,Tamil Nadu,0,20
+273,Lemon Juice,Lemon,Uttarakhand,1,64
+274,Sesame,Sesame,Tamil Nadu,0,53
+275,Mint,Mint,Odisha,1,63
+276,Corn Flour,Corn,Andhra Pradesh,1,76
+277,Corn Oil,Corn,West Bengal,0,60
+278,Mustard Oil,Mustard,Andhra Pradesh,1,2
+279,Sugar,Sugarcane,Maharashtra,0,30
+280,Onion,Onion,Maharashtra,0,20
+281,Corn Flour,Corn,Uttar Pradesh,1,1
+282,Apple Juice,Apple,Tamil Nadu,1,74
+283,Mustard Oil,Mustard,West Bengal,1,98
+284,Rosemary,Rosemary,Assam,1,2
+285,Sesame Seeds,Sesame,Maharashtra,1,22
+286,Black Lentil,Black Lentil,Maharashtra,0,82
+287,Almond Milk,Almond,Uttarakhand,0,87
+288,Red Onion,Onion,Assam,0,88
+289,Basil,Basil,Jharkhand,0,55
+290,Soybean Oil,Soybean,Andhra Pradesh,1,78
+291,Basil,Basil,Andhra Pradesh,0,93
+292,Black Lentil,Black Lentil,Odisha,0,22
+293,Oregano,Oregano,Haryana,0,9
+294,Coconut Oil,Coconut,Rajasthan,0,34
+295,Mustard Seeds,Mustard,Madhya Pradesh,0,100
+296,Mustard Seeds,Mustard,West Bengal,1,15
+297,Basil,Basil,Chhattisgarh,1,47
+298,Onion,Onion,Maharashtra,0,24
+299,Apple Juice,Apple,Rajasthan,1,10
+300,Corn Flour,Corn,Rajasthan,1,13
+301,Yellow Lentil,Yellow Lentil,Jammu and Kashmir,0,50
+302,Apple Juice,Apple,Gujarat,1,94
+303,Garlic,Garlic,Kerala,1,39
+304,Mint,Mint,Madhya Pradesh,0,7
+305,Lentil,Lentil,West Bengal,1,35
+306,Onion,Onion,Assam,0,12
+307,Sesame Seeds,Sesame,Uttar Pradesh,1,68
+308,Soybean Oil,Soybean,Ladakh,1,56
+309,Red Lentil,Red Lentil,Tamil Nadu,0,71
+310,Red Lentil,Red Lentil,Maharashtra,1,67
+311,Cucumber Pickle,Cucumber,Himachal Pradesh,0,93
+312,Mustard Seeds,Mustard,Punjab,1,61
+313,Spinach Juice,Spinach,Punjab,0,27
+314,Green Onion,Onion,Rajasthan,0,52
+315,Turmeric,Turmeric,Kerala,1,46
+316,Peanut Oil,Peanut,Gujarat,1,28
+317,Basil,Basil,Rajasthan,1,36
+318,Orange Juice,Orange,Rajasthan,1,46
+319,Peanut,Peanut,Jharkhand,0,98
+320,Tomato Ketchup,Tomato,Jharkhand,1,17
+321,Basil,Basil,Goa,0,98
+322,Cotton T-Shirt,Cotton,Assam,1,25
+323,Almond Milk,Almond,Jharkhand,1,87
+324,Onion,Onion,Maharashtra,1,96
+325,Black Lentil,Black Lentil,Assam,0,79
+326,Peanut Oil,Peanut,Punjab,0,78
+327,Yellow Onion,Onion,Rajasthan,0,51
+328,Yellow Onion,Onion,Maharashtra,0,21
+329,Coconut Oil,Coconut,Himachal Pradesh,1,50
+330,Pineapple Juice,Pineapple,Kerala,0,37
+331,Tomato Ketchup,Tomato,West Bengal,1,51
+332,Thyme,Thyme,Assam,0,5
+333,Peanut Oil,Peanut,Ladakh,1,98
+334,Black Lentil,Black Lentil,Madhya Pradesh,0,28
+335,Sugar,Sugarcane,Haryana,1,60
+336,Potato Juice,Potato,Maharashtra,1,10
+337,Coriander,Coriander,Punjab,1,85
+338,Lentil,Lentil,Gujarat,0,33
+339,Yellow Lentil,Yellow Lentil,Haryana,1,12
+340,Red Lentil,Red Lentil,Assam,1,58
+341,Potato Juice,Potato,Jammu and Kashmir,0,59
+342,Cucumber Pickle,Cucumber,Telangana,0,57
+343,Thyme,Thyme,Uttarakhand,0,59
+344,Cotton T-Shirt,Cotton,Jammu and Kashmir,1,11
+345,Lemon Juice,Lemon,Punjab,1,41
+346,Sesame Seeds,Sesame,Karnatak,1,84
+347,Thyme,Thyme,Jammu and Kashmir,1,6
+348,Corn Oil,Corn,Maharashtra,0,74
+349,Turmeric,Turmeric,Goa,0,83
+350,Orange Juice,Orange,Ladakh,0,3
+351,Coconut Oil,Coconut,Ladakh,0,56
+352,Red Onion,Onion,Kerala,1,78
+353,Mustard,Mustard,Gujarat,0,43
+354,Oregano,Oregano,Haryana,0,68
+355,Yellow Onion,Onion,Rajasthan,0,58
+356,Ginger,Ginger,Chhattisgarh,0,88
+357,Mustard Oil,Mustard,Andhra Pradesh,0,13
+358,Mango Juice,Mango,Kerala,0,79
+359,Thyme,Thyme,Ladakh,0,41
+360,Orange Juice,Orange,Rajasthan,0,51
+361,Mint,Mint,Ladakh,0,10
+362,Corn Flour,Corn,Uttar Pradesh,0,98
+363,Turmeric,Turmeric,Uttarakhand,0,61
+364,Apple Juice,Apple,Karnatak,1,30
+365,Sugar,Sugarcane,Odisha,0,7
+366,Potato Juice,Potato,Punjab,1,83
+367,Thyme,Thyme,Telangana,0,42
+368,Yellow Onion,Onion,Ladakh,0,69
+369,Sesame Seeds,Sesame,Chhattisgarh,0,48
+370,Wheat Flour,Wheat,Kerala,0,27
+371,Mint,Mint,Assam,1,60
+372,Mustard,Mustard,Telangana,0,53
+373,Rice,Rice,Assam,1,10
+374,Green Onion,Onion,Odisha,0,74
+375,Soybean Oil,Soybean,Rajasthan,1,71
+376,Banana Juice,Banana,Karnatak,0,81
+377,Corn Oil,Corn,Madhya Pradesh,1,45
+378,Corn Flour,Corn,Kerala,1,93
+379,Mustard Seeds,Mustard,Tamil Nadu,1,85
+380,Green Lentil,Green Lentil,Kerala,1,77
+381,Sesame Seeds,Sesame,Madhya Pradesh,1,4
+382,Almond Milk,Almond,Rajasthan,0,5
+383,Thyme,Thyme,Himachal Pradesh,0,62
+384,Corn Oil,Corn,Tamil Nadu,0,13
+385,Tomato Ketchup,Tomato,Karnatak,1,5
+386,Mint,Mint,Jharkhand,0,3
+387,Grapes Juice,Grapes,Uttar Pradesh,0,4
+388,Mint,Mint,Assam,0,13
+389,Onion,Onion,Punjab,0,71
+390,Jaggery,Sugarcane,Ladakh,0,64
+391,Ginger,Ginger,Ladakh,0,84
+392,Green Lentil,Green Lentil,Himachal Pradesh,0,80
+393,Corn Flour,Corn,Maharashtra,0,42
+394,Soybean Oil,Soybean,Madhya Pradesh,1,36
+395,Banana Juice,Banana,Jammu and Kashmir,1,45
+396,Green Onion,Onion,Andhra Pradesh,1,30
+397,Cotton T-Shirt,Cotton,Madhya Pradesh,0,76
+398,Green Lentil,Green Lentil,Maharashtra,1,56
+399,Sugar,Sugarcane,Chhattisgarh,0,59
+400,Sugar,Sugarcane,Uttarakhand,1,71
+401,Wheat Flour,Wheat,Maharashtra,1,28
+402,Mustard Seeds,Mustard,Gujarat,1,17
+403,Yellow Onion,Onion,Madhya Pradesh,1,96
+404,Cucumber Pickle,Cucumber,Kerala,0,16
+405,Sesame,Sesame,Andhra Pradesh,1,83
+406,Pineapple Juice,Pineapple,Odisha,0,16
+407,Garlic,Garlic,Uttarakhand,1,45
+408,Turmeric,Turmeric,Rajasthan,1,27
+409,Red Lentil,Red Lentil,Assam,0,89
+410,Spinach Juice,Spinach,Goa,1,57
+411,Sesame Seeds,Sesame,Tamil Nadu,0,64
+412,Rosemary,Rosemary,Assam,0,53
+413,Sesame,Sesame,Jammu and Kashmir,0,75
+414,Almond Milk,Almond,Himachal Pradesh,0,15
+415,Coconut Oil,Coconut,Goa,0,92
+416,Lemon Juice,Lemon,Jammu and Kashmir,1,53
+417,Orange Juice,Orange,Ladakh,1,61
+418,Tomato Ketchup,Tomato,Assam,0,30
+419,Mustard Seeds,Mustard,Jharkhand,0,46
+420,Rice,Rice,Odisha,1,75
+421,Wheat Flour,Wheat,Tamil Nadu,0,79
+422,Coconut Oil,Coconut,West Bengal,1,97
+423,Lentil,Lentil,Uttarakhand,1,3
+424,Corn Flour,Corn,Haryana,0,11
+425,Mustard Seeds,Mustard,Chhattisgarh,1,93
+426,Thyme,Thyme,Chhattisgarh,0,28
+427,Mustard Oil,Mustard,Jammu and Kashmir,0,39
+428,Grapes Juice,Grapes,Jammu and Kashmir,0,9
+429,Green Onion,Onion,Madhya Pradesh,0,16
+430,Green Onion,Onion,Madhya Pradesh,0,26
+431,Apple Juice,Apple,Gujarat,1,6
+432,Basil,Basil,West Bengal,1,80
+433,Potato Juice,Potato,Uttarakhand,0,31
+434,Yellow Onion,Onion,Goa,1,16
+435,Rice,Rice,Rajasthan,0,19
+436,Cucumber Pickle,Cucumber,Gujarat,1,45
+437,Soybean Oil,Soybean,Tamil Nadu,1,41
+438,Sesame Seeds,Sesame,Maharashtra,0,71
+439,Oregano,Oregano,Punjab,1,72
+440,Peanut Butter,Peanut,West Bengal,1,46
+441,Red Onion,Onion,West Bengal,0,7
+442,Green Onion,Onion,Assam,0,23
+443,Sesame Oil,Sesame,Punjab,0,66
+444,Thyme,Thyme,Odisha,0,90
+445,Cucumber Pickle,Cucumber,Goa,1,27
+446,Sugar,Sugarcane,Himachal Pradesh,0,15
+447,Sugar,Sugarcane,Telangana,1,12
+448,Garlic,Garlic,Uttar Pradesh,0,51
+449,Yellow Onion,Onion,Karnatak,1,30
+450,Mustard,Mustard,Gujarat,1,91
+451,Sesame Seeds,Sesame,Uttarakhand,1,41
+452,Ginger,Ginger,Himachal Pradesh,0,22
+453,Black Lentil,Black Lentil,Uttar Pradesh,1,60
+454,Red Onion,Onion,Rajasthan,0,35
+455,Cumin,Cumin,Goa,1,50
+456,Onion,Onion,Goa,1,61
+457,Sesame,Sesame,Uttarakhand,0,56
+458,Orange Juice,Orange,Gujarat,0,90
+459,Turmeric,Turmeric,Jharkhand,0,79
+460,Cumin,Cumin,Himachal Pradesh,0,26
+461,Turmeric,Turmeric,Gujarat,0,18
+462,Red Lentil,Red Lentil,Madhya Pradesh,1,98
+463,Lentil,Lentil,Jammu and Kashmir,0,96
+464,Mustard Seeds,Mustard,Assam,0,32
+465,Jaggery,Sugarcane,Ladakh,0,41
+466,Soybean Oil,Soybean,Punjab,0,73
+467,Tomato Ketchup,Tomato,Kerala,0,23
+468,Garlic,Garlic,Uttarakhand,0,71
+469,Banana Juice,Banana,Haryana,0,67
+470,Peanut Butter,Peanut,Telangana,1,30
+471,Coconut Oil,Coconut,Karnatak,1,67
+472,Apple Juice,Apple,Punjab,0,26
+473,Tomato Ketchup,Tomato,Odisha,0,45
+474,Mustard,Mustard,Telangana,0,72
+475,Mango Juice,Mango,Assam,0,45
+476,Yellow Lentil,Yellow Lentil,Goa,1,39
+477,Turmeric,Turmeric,West Bengal,1,43
+478,Coriander,Coriander,Telangana,1,35
+479,Spinach Juice,Spinach,Haryana,0,4
+480,Peanut,Peanut,Rajasthan,1,100
+481,Sesame Oil,Sesame,Jharkhand,0,42
+482,Cucumber Pickle,Cucumber,Himachal Pradesh,0,43
+483,Peanut Oil,Peanut,Punjab,0,71
+484,Cucumber Pickle,Cucumber,Rajasthan,0,35
+485,Spinach Juice,Spinach,Andhra Pradesh,0,76
+486,Almond Milk,Almond,West Bengal,0,61
+487,Peanut,Peanut,Jammu and Kashmir,0,50
+488,Black Lentil,Black Lentil,Odisha,1,99
+489,Lentil,Lentil,Rajasthan,1,46
+490,Coriander,Coriander,Assam,1,93
+491,Potato Juice,Potato,Himachal Pradesh,1,18
+492,Wheat Flour,Wheat,Goa,1,57
+493,Jaggery,Sugarcane,Himachal Pradesh,1,12
+494,Oregano,Oregano,Kerala,0,70
+495,Corn Flour,Corn,Rajasthan,0,44
+496,Oregano,Oregano,Odisha,1,4
+497,Mustard Oil,Mustard,Assam,1,87
+498,Spinach Juice,Spinach,Madhya Pradesh,0,98
+499,Onion,Onion,Maharashtra,1,94
+500,Cucumber Pickle,Cucumber,West Bengal,0,13
+501,Yellow Lentil,Yellow Lentil,Rajasthan,0,19
+502,Grapes Juice,Grapes,Ladakh,1,57
+503,Coconut Oil,Coconut,Rajasthan,0,56
+504,Mint,Mint,Jammu and Kashmir,1,95
+505,Mint,Mint,Maharashtra,1,60
+506,Orange Juice,Orange,Odisha,0,64
+507,Red Onion,Onion,Assam,0,78
+508,Mustard Seeds,Mustard,Uttar Pradesh,0,90
+509,Basil,Basil,Maharashtra,0,22
+510,Tomato Ketchup,Tomato,Madhya Pradesh,0,17
+511,Corn Flour,Corn,Jharkhand,0,65
+512,Sesame Seeds,Sesame,Telangana,1,5
+513,Tomato Ketchup,Tomato,Haryana,1,2
+514,Turmeric,Turmeric,Chhattisgarh,0,31
+515,Sesame Seeds,Sesame,Himachal Pradesh,0,81
+516,Green Onion,Onion,Chhattisgarh,0,60
+517,Sugar,Sugarcane,Jammu and Kashmir,1,91
+518,Mint,Mint,Andhra Pradesh,1,31
+519,Black Lentil,Black Lentil,Uttar Pradesh,0,39
+520,Peanut Oil,Peanut,Uttarakhand,1,53
+521,Ginger,Ginger,Rajasthan,0,56
+522,Peanut,Peanut,Odisha,0,83
+523,Yellow Onion,Onion,Chhattisgarh,1,39
+524,Rice,Rice,Tamil Nadu,0,1
+525,Red Onion,Onion,Chhattisgarh,0,10
+526,Banana Juice,Banana,Tamil Nadu,1,25
+527,Rosemary,Rosemary,Jammu and Kashmir,1,97
+528,Pineapple Juice,Pineapple,Odisha,0,3
+529,Mustard,Mustard,Haryana,1,3
+530,Cotton T-Shirt,Cotton,Goa,0,4
+531,Coriander,Coriander,Jammu and Kashmir,1,18
+532,Cucumber Pickle,Cucumber,Himachal Pradesh,1,18
+533,Mustard,Mustard,Assam,0,38
+534,Mustard,Mustard,Himachal Pradesh,0,89
+535,Cumin,Cumin,Madhya Pradesh,0,11
+536,Green Onion,Onion,Maharashtra,1,29
+537,Spinach Juice,Spinach,West Bengal,0,80
+538,Rice,Rice,Telangana,0,14
+539,Lemon Juice,Lemon,Andhra Pradesh,1,31
+540,Black Lentil,Black Lentil,Assam,0,25
+541,Jaggery,Sugarcane,Madhya Pradesh,1,87
+542,Pineapple Juice,Pineapple,Uttar Pradesh,1,5
+543,Soybean Oil,Soybean,Karnatak,0,4
+544,Rosemary,Rosemary,Chhattisgarh,0,18
+545,Tomato Ketchup,Tomato,Kerala,0,35
+546,Black Lentil,Black Lentil,Tamil Nadu,1,35
+547,Tomato Ketchup,Tomato,Gujarat,1,91
+548,Cumin,Cumin,Himachal Pradesh,1,26
+549,Almond Milk,Almond,Maharashtra,0,64
+550,Ginger,Ginger,Himachal Pradesh,0,22
+551,Apple Juice,Apple,Goa,0,79
+552,Sesame Seeds,Sesame,Telangana,1,12
+553,Sesame,Sesame,Andhra Pradesh,0,22
+554,Ginger,Ginger,Uttar Pradesh,1,14
+555,Cotton T-Shirt,Cotton,Andhra Pradesh,1,54
+556,Onion,Onion,Maharashtra,0,53
+557,Jaggery,Sugarcane,Madhya Pradesh,0,34
+558,Rice,Rice,Rajasthan,1,23
+559,Red Onion,Onion,Telangana,0,25
+560,Oregano,Oregano,Tamil Nadu,1,91
+561,Orange Juice,Orange,Goa,1,13
+562,Mint,Mint,Jammu and Kashmir,1,7
+563,Peanut,Peanut,Tamil Nadu,1,86
+564,Potato Juice,Potato,Rajasthan,1,55
+565,Sesame,Sesame,Punjab,0,77
+566,Thyme,Thyme,Assam,0,36
+567,Onion,Onion,Gujarat,0,7
+568,Rice,Rice,Madhya Pradesh,0,11
+569,Red Onion,Onion,Goa,1,30
+570,Turmeric,Turmeric,West Bengal,1,80
+571,Banana Juice,Banana,Karnatak,0,16
+572,Spinach Juice,Spinach,Karnatak,1,5
+573,Black Lentil,Black Lentil,Assam,0,45
+574,Potato Juice,Potato,Karnatak,1,63
+575,Red Onion,Onion,Himachal Pradesh,0,60
+576,Sesame Seeds,Sesame,Odisha,1,9
+577,Lemon Juice,Lemon,Assam,1,27
+578,Green Onion,Onion,Kerala,1,16
+579,Mustard,Mustard,Andhra Pradesh,1,48
+580,Green Lentil,Green Lentil,Assam,1,83
+581,Sugar,Sugarcane,Assam,0,100
+582,Mustard Seeds,Mustard,Chhattisgarh,0,5
+583,Pineapple Juice,Pineapple,Rajasthan,1,43
+584,Ginger,Ginger,Jammu and Kashmir,1,18
+585,Cumin,Cumin,Kerala,0,86
+586,Rice,Rice,Gujarat,1,66
+587,Turmeric,Turmeric,Kerala,1,39
+588,Oregano,Oregano,Ladakh,0,92
+589,Green Onion,Onion,Maharashtra,1,12
+590,Pineapple Juice,Pineapple,Telangana,0,72
+591,Potato Juice,Potato,Maharashtra,0,52
+592,Red Lentil,Red Lentil,Rajasthan,1,81
+593,Cumin,Cumin,Goa,1,36
+594,Pineapple Juice,Pineapple,Uttarakhand,0,75
+595,Grapes Juice,Grapes,Madhya Pradesh,0,90
+596,Mango Juice,Mango,Karnatak,1,29
+597,Cumin,Cumin,Uttar Pradesh,0,89
+598,Grapes Juice,Grapes,Rajasthan,0,89
+599,Wheat Flour,Wheat,West Bengal,0,83
+600,Cotton T-Shirt,Cotton,Uttar Pradesh,0,7
+601,Red Onion,Onion,Assam,1,54
+602,Coriander,Coriander,Telangana,0,45
+603,Garlic,Garlic,West Bengal,0,49
+604,Wheat Flour,Wheat,Rajasthan,0,28
+605,Rosemary,Rosemary,Rajasthan,0,16
+606,Cucumber Pickle,Cucumber,Haryana,1,20
+607,Rice,Rice,Gujarat,0,4
+608,Sesame Seeds,Sesame,Punjab,1,13
+609,Wheat Flour,Wheat,Rajasthan,1,95
+610,Soybean Oil,Soybean,Tamil Nadu,0,78
+611,Rice,Rice,Gujarat,1,70
+612,Sesame Oil,Sesame,Rajasthan,0,83
+613,Mustard Seeds,Mustard,Uttarakhand,0,45
+614,Spinach Juice,Spinach,Odisha,1,73
+615,Corn Flour,Corn,Jharkhand,0,87
+616,Peanut Oil,Peanut,Madhya Pradesh,1,24
+617,Turmeric,Turmeric,Goa,1,35
+618,Thyme,Thyme,Haryana,0,37
+619,Peanut Butter,Peanut,Tamil Nadu,0,62
+620,Lentil,Lentil,Jharkhand,0,95
+621,Basil,Basil,Gujarat,1,10
+622,Red Lentil,Red Lentil,Haryana,0,49
+623,Cumin,Cumin,Tamil Nadu,0,16
+624,Orange Juice,Orange,Gujarat,0,14
+625,Soybean Oil,Soybean,Uttar Pradesh,1,56
+626,Oregano,Oregano,Jammu and Kashmir,1,40
+627,Peanut Butter,Peanut,Jammu and Kashmir,1,25
+628,Soybean Oil,Soybean,Andhra Pradesh,1,1
+629,Wheat Flour,Wheat,Tamil Nadu,0,80
+630,Wheat Flour,Wheat,Andhra Pradesh,1,49
+631,Thyme,Thyme,Gujarat,0,78
+632,Green Lentil,Green Lentil,Gujarat,0,15
+633,Yellow Lentil,Yellow Lentil,Chhattisgarh,1,45
+634,Apple Juice,Apple,Maharashtra,0,30
+635,Apple Juice,Apple,Rajasthan,1,4
+636,Potato Juice,Potato,Maharashtra,1,17
+637,Mango Juice,Mango,Rajasthan,1,34
+638,Soybean Oil,Soybean,Uttarakhand,0,38
+639,Mustard Oil,Mustard,Uttar Pradesh,0,81
+640,Sesame Oil,Sesame,Odisha,0,54
+641,Corn Oil,Corn,Telangana,0,95
+642,Black Lentil,Black Lentil,Goa,0,21
+643,Green Lentil,Green Lentil,Gujarat,1,4
+644,Grapes Juice,Grapes,Jharkhand,1,45
+645,Potato Juice,Potato,Gujarat,1,1
+646,Cotton T-Shirt,Cotton,Odisha,0,93
+647,Almond Milk,Almond,Assam,0,90
+648,Almond Milk,Almond,Haryana,1,45
+649,Oregano,Oregano,Gujarat,0,67
+650,Mustard,Mustard,Uttarakhand,0,59
+651,Mustard Oil,Mustard,Tamil Nadu,0,98
+652,Coconut Oil,Coconut,Maharashtra,1,17
+653,Mint,Mint,Jammu and Kashmir,0,32
+654,Thyme,Thyme,Uttarakhand,1,90
+655,Spinach Juice,Spinach,Punjab,1,86
+656,Corn Oil,Corn,Ladakh,0,52
+657,Cucumber Pickle,Cucumber,Rajasthan,0,63
+658,Wheat Flour,Wheat,Ladakh,1,66
+659,Mustard,Mustard,Andhra Pradesh,0,22
+660,Potato Juice,Potato,Uttarakhand,1,33
+661,Coriander,Coriander,Madhya Pradesh,1,7
+662,Rosemary,Rosemary,Himachal Pradesh,1,82
+663,Thyme,Thyme,Telangana,0,21
+664,Peanut,Peanut,West Bengal,1,45
+665,Mustard,Mustard,Assam,1,46
+666,Potato Juice,Potato,Ladakh,1,78
+667,Orange Juice,Orange,Maharashtra,0,76
+668,Lemon Juice,Lemon,Tamil Nadu,1,41
+669,Red Lentil,Red Lentil,Ladakh,1,1
+670,Potato Juice,Potato,Madhya Pradesh,1,85
+671,Coconut Oil,Coconut,Tamil Nadu,0,85
+672,Almond Milk,Almond,Rajasthan,0,53
+673,Ginger,Ginger,West Bengal,1,69
+674,Ginger,Ginger,Jammu and Kashmir,1,36
+675,Ginger,Ginger,West Bengal,1,73
+676,Mustard,Mustard,West Bengal,0,49
+677,Ginger,Ginger,Rajasthan,1,72
+678,Cotton T-Shirt,Cotton,Punjab,1,40
+679,Thyme,Thyme,Assam,0,92
+680,Peanut Oil,Peanut,Kerala,0,74
+681,Green Lentil,Green Lentil,Uttar Pradesh,1,74
+682,Mustard Seeds,Mustard,Gujarat,1,99
+683,Red Lentil,Red Lentil,Ladakh,1,11
+684,Peanut,Peanut,Kerala,0,66
+685,Sugar,Sugarcane,Goa,1,29
+686,Jaggery,Sugarcane,Kerala,0,49
+687,Green Onion,Onion,Andhra Pradesh,1,22
+688,Jaggery,Sugarcane,Assam,1,47
+689,Yellow Onion,Onion,Himachal Pradesh,0,17
+690,Thyme,Thyme,Uttar Pradesh,1,93
+691,Jaggery,Sugarcane,Karnatak,0,38
+692,Corn Oil,Corn,Punjab,1,26
+693,Yellow Lentil,Yellow Lentil,Maharashtra,0,23
+694,Mustard,Mustard,Gujarat,0,87
+695,Yellow Lentil,Yellow Lentil,Telangana,0,2
+696,Green Onion,Onion,Gujarat,0,14
+697,Potato Juice,Potato,Madhya Pradesh,0,28
+698,Sesame Oil,Sesame,Odisha,0,35
+699,Green Lentil,Green Lentil,Haryana,0,31
+700,Cucumber Pickle,Cucumber,Andhra Pradesh,1,20
+701,Oregano,Oregano,Jammu and Kashmir,1,66
+702,Orange Juice,Orange,Uttar Pradesh,1,9
+703,Corn Oil,Corn,Ladakh,1,89
+704,Sesame Oil,Sesame,Karnatak,0,60
+705,Mango Juice,Mango,Chhattisgarh,1,28
+706,Corn Oil,Corn,Jharkhand,1,1
+707,Turmeric,Turmeric,Jammu and Kashmir,0,95
+708,Corn Flour,Corn,West Bengal,1,87
+709,Lentil,Lentil,Uttar Pradesh,1,38
+710,Onion,Onion,Punjab,0,34
+711,Orange Juice,Orange,Chhattisgarh,1,67
+712,Cumin,Cumin,Punjab,0,41
+713,Orange Juice,Orange,Ladakh,0,84
+714,Green Onion,Onion,Andhra Pradesh,1,77
+715,Orange Juice,Orange,Ladakh,1,28
+716,Onion,Onion,Assam,0,42
+717,Corn Oil,Corn,Jharkhand,0,39
+718,Tomato Ketchup,Tomato,Odisha,0,26
+719,Orange Juice,Orange,Odisha,0,31
+720,Yellow Onion,Onion,Goa,1,84
+721,Cumin,Cumin,Telangana,0,98
+722,Cumin,Cumin,Tamil Nadu,0,90
+723,Mustard Seeds,Mustard,Punjab,0,10
+724,Mango Juice,Mango,Assam,1,48
+725,Thyme,Thyme,Jammu and Kashmir,1,3
+726,Peanut,Peanut,Assam,0,35
+727,Coriander,Coriander,Telangana,0,54
+728,Soybean Oil,Soybean,Andhra Pradesh,0,40
+729,Black Lentil,Black Lentil,Haryana,1,17
+730,Peanut Butter,Peanut,Chhattisgarh,1,90
+731,Cumin,Cumin,Ladakh,0,44
+732,Mint,Mint,Rajasthan,0,24
+733,Mustard Oil,Mustard,Andhra Pradesh,1,12
+734,Rosemary,Rosemary,Chhattisgarh,1,73
+735,Sugar,Sugarcane,Himachal Pradesh,0,37
+736,Rosemary,Rosemary,Gujarat,0,75
+737,Banana Juice,Banana,Odisha,0,85
+738,Mint,Mint,Assam,1,41
+739,Rosemary,Rosemary,Madhya Pradesh,1,37
+740,Soybean Oil,Soybean,Jammu and Kashmir,0,94
+741,Potato Juice,Potato,Jammu and Kashmir,1,28
+742,Corn Flour,Corn,West Bengal,0,56
+743,Mint,Mint,Goa,0,23
+744,Soybean Oil,Soybean,Karnatak,1,64
+745,Mint,Mint,Punjab,0,46
+746,Coriander,Coriander,Assam,0,74
+747,Green Lentil,Green Lentil,West Bengal,1,5
+748,Banana Juice,Banana,Haryana,1,99
+749,Almond Milk,Almond,Uttar Pradesh,1,32
+750,Black Lentil,Black Lentil,Karnatak,0,7
+751,Garlic,Garlic,Telangana,1,21
+752,Sugar,Sugarcane,Rajasthan,1,60
+753,Sesame Seeds,Sesame,Chhattisgarh,0,25
+754,Sesame Oil,Sesame,Gujarat,0,24
+755,Thyme,Thyme,Assam,0,41
+756,Tomato Ketchup,Tomato,Madhya Pradesh,1,83
+757,Coconut Oil,Coconut,Telangana,1,21
+758,Turmeric,Turmeric,Punjab,0,22
+759,Tomato Ketchup,Tomato,Telangana,0,41
+760,Corn Oil,Corn,Madhya Pradesh,1,73
+761,Red Onion,Onion,Karnatak,1,11
+762,Yellow Lentil,Yellow Lentil,Himachal Pradesh,0,61
+763,Oregano,Oregano,Andhra Pradesh,0,32
+764,Peanut Butter,Peanut,Andhra Pradesh,0,38
+765,Sesame Oil,Sesame,Chhattisgarh,0,59
+766,Almond Milk,Almond,Chhattisgarh,0,56
+767,Red Lentil,Red Lentil,Haryana,0,16
+768,Almond Milk,Almond,Telangana,1,66
+769,Corn Flour,Corn,Jammu and Kashmir,0,37
+770,Green Onion,Onion,Assam,0,31
+771,Soybean Oil,Soybean,Uttarakhand,0,99
+772,Wheat Flour,Wheat,Uttar Pradesh,0,7
+773,Ginger,Ginger,Goa,0,35
+774,Mustard Oil,Mustard,Kerala,0,55
+775,Onion,Onion,Punjab,1,19
+776,Soybean Oil,Soybean,Odisha,0,99
+777,Garlic,Garlic,Jharkhand,1,6
+778,Yellow Onion,Onion,Goa,1,53
+779,Black Lentil,Black Lentil,Telangana,0,15
+780,Yellow Onion,Onion,Uttarakhand,0,66
+781,Mustard Seeds,Mustard,Uttarakhand,0,61
+782,Jaggery,Sugarcane,Kerala,0,57
+783,Corn Oil,Corn,Odisha,0,72
+784,Cotton T-Shirt,Cotton,Tamil Nadu,1,75
+785,Red Onion,Onion,Andhra Pradesh,0,6
+786,Peanut Oil,Peanut,Goa,1,51
+787,Peanut,Peanut,Gujarat,0,72
+788,Apple Juice,Apple,Jammu and Kashmir,1,92
+789,Corn Flour,Corn,Kerala,1,26
+790,Thyme,Thyme,Assam,1,78
+791,Cumin,Cumin,Jammu and Kashmir,0,84
+792,Cucumber Pickle,Cucumber,Punjab,1,54
+793,Peanut,Peanut,Gujarat,1,81
+794,Rosemary,Rosemary,Andhra Pradesh,0,33
+795,Mustard,Mustard,Punjab,1,52
+796,Peanut Butter,Peanut,Tamil Nadu,0,1
+797,Spinach Juice,Spinach,Karnatak,1,61
+798,Peanut Butter,Peanut,Ladakh,1,51
+799,Turmeric,Turmeric,Andhra Pradesh,1,81
+800,Corn Flour,Corn,Himachal Pradesh,0,77
+801,Corn Flour,Corn,Rajasthan,0,34
+802,Red Onion,Onion,Kerala,1,56
+803,Banana Juice,Banana,Tamil Nadu,0,73
+804,Coconut Oil,Coconut,West Bengal,1,32
+805,Turmeric,Turmeric,Rajasthan,1,1
+806,Grapes Juice,Grapes,Telangana,1,61
+807,Cucumber Pickle,Cucumber,Uttarakhand,1,5
+808,Almond Milk,Almond,Maharashtra,1,30
+809,Garlic,Garlic,Uttarakhand,0,12
+810,Yellow Lentil,Yellow Lentil,Madhya Pradesh,0,29
+811,Mustard Oil,Mustard,Karnatak,0,20
+812,Cucumber Pickle,Cucumber,Maharashtra,1,52
+813,Lentil,Lentil,Telangana,1,18
+814,Rice,Rice,Rajasthan,0,87
+815,Onion,Onion,Uttar Pradesh,1,44
+816,Soybean Oil,Soybean,Gujarat,0,37
+817,Mustard Oil,Mustard,Jharkhand,0,75
+818,Lemon Juice,Lemon,Ladakh,0,59
+819,Red Lentil,Red Lentil,Himachal Pradesh,1,28
+820,Mustard Seeds,Mustard,Odisha,0,34
+821,Garlic,Garlic,Telangana,1,84
+822,Spinach Juice,Spinach,Kerala,0,97
+823,Mustard Seeds,Mustard,Jammu and Kashmir,0,26
+824,Peanut Oil,Peanut,Jharkhand,1,16
+825,Sesame,Sesame,Maharashtra,0,76
+826,Mango Juice,Mango,Punjab,0,31
+827,Green Onion,Onion,Maharashtra,1,12
+828,Thyme,Thyme,Jharkhand,0,91
+829,Mango Juice,Mango,Odisha,0,16
+830,Rice,Rice,Kerala,1,3
+831,Onion,Onion,Uttar Pradesh,1,16
+832,Thyme,Thyme,Himachal Pradesh,1,63
+833,Green Onion,Onion,Himachal Pradesh,0,55
+834,Red Onion,Onion,Himachal Pradesh,1,79
+835,Rice,Rice,Goa,1,69
+836,Ginger,Ginger,Himachal Pradesh,1,36
+837,Banana Juice,Banana,Maharashtra,1,92
+838,Tomato Ketchup,Tomato,Kerala,0,2
+839,Almond Milk,Almond,Tamil Nadu,0,50
+840,Spinach Juice,Spinach,Tamil Nadu,0,4
+841,Orange Juice,Orange,Jharkhand,0,93
+842,Mustard Seeds,Mustard,West Bengal,1,39
+843,Corn Flour,Corn,Kerala,1,64
+844,Basil,Basil,Jharkhand,0,88
+845,Lentil,Lentil,Madhya Pradesh,0,45
+846,Wheat Flour,Wheat,Karnatak,1,41
+847,Rice,Rice,Himachal Pradesh,1,36
+848,Coriander,Coriander,Tamil Nadu,0,87
+849,Tomato Ketchup,Tomato,Jharkhand,0,2
+850,Pineapple Juice,Pineapple,Haryana,1,78
+851,Yellow Lentil,Yellow Lentil,Odisha,1,20
+852,Sesame Oil,Sesame,Karnatak,0,31
+853,Sesame Oil,Sesame,Kerala,0,84
+854,Sesame Oil,Sesame,Madhya Pradesh,0,100
+855,Sesame Seeds,Sesame,Odisha,0,97
+856,Coriander,Coriander,Jharkhand,0,97
+857,Mustard Seeds,Mustard,Karnatak,1,56
+858,Peanut Oil,Peanut,Uttar Pradesh,0,90
+859,Coriander,Coriander,Himachal Pradesh,1,75
+860,Mustard Seeds,Mustard,Uttarakhand,0,65
+861,Cumin,Cumin,Ladakh,1,45
+862,Mustard,Mustard,Haryana,1,29
+863,Red Onion,Onion,Kerala,0,45
+864,Orange Juice,Orange,Jammu and Kashmir,1,8
+865,Green Lentil,Green Lentil,Goa,0,69
+866,Almond Milk,Almond,Uttar Pradesh,0,65
+867,Orange Juice,Orange,Kerala,1,91
+868,Mustard Seeds,Mustard,Chhattisgarh,1,34
+869,Green Onion,Onion,Jammu and Kashmir,0,37
+870,Jaggery,Sugarcane,Gujarat,0,65
+871,Onion,Onion,Karnatak,0,9
+872,Sesame,Sesame,Telangana,1,29
+873,Rosemary,Rosemary,West Bengal,1,55
+874,Mango Juice,Mango,Maharashtra,1,53
+875,Orange Juice,Orange,Odisha,1,48
+876,Mint,Mint,Uttar Pradesh,1,96
+877,Lemon Juice,Lemon,Gujarat,0,53
+878,Cotton T-Shirt,Cotton,Punjab,1,13
+879,Mustard,Mustard,Uttarakhand,1,30
+880,Yellow Onion,Onion,Rajasthan,1,81
+881,Grapes Juice,Grapes,Uttarakhand,0,18
+882,Spinach Juice,Spinach,Tamil Nadu,0,69
+883,Red Lentil,Red Lentil,Punjab,0,83
+884,Potato Juice,Potato,Jammu and Kashmir,1,15
+885,Sesame Oil,Sesame,Karnatak,0,52
+886,Ginger,Ginger,Uttar Pradesh,1,53
+887,Peanut Oil,Peanut,Karnatak,1,3
+888,Turmeric,Turmeric,Uttarakhand,0,84
+889,Green Onion,Onion,Gujarat,1,80
+890,Coconut Oil,Coconut,Odisha,0,46
+891,Sesame Seeds,Sesame,Punjab,0,8
+892,Yellow Onion,Onion,Karnatak,1,53
+893,Grapes Juice,Grapes,Chhattisgarh,1,1
+894,Mustard Seeds,Mustard,Himachal Pradesh,1,3
+895,Peanut,Peanut,Telangana,0,21
+896,Coriander,Coriander,Punjab,0,11
+897,Cotton T-Shirt,Cotton,Rajasthan,0,24
+898,Tomato Ketchup,Tomato,Ladakh,1,75
+899,Garlic,Garlic,Rajasthan,1,22
+900,Peanut Butter,Peanut,Maharashtra,1,25
+901,Green Lentil,Green Lentil,Uttarakhand,1,3
+902,Sesame,Sesame,Telangana,0,85
+903,Sugar,Sugarcane,Gujarat,1,30
+904,Green Lentil,Green Lentil,West Bengal,0,48
+905,Corn Flour,Corn,Rajasthan,0,83
+906,Peanut,Peanut,Uttar Pradesh,1,11
+907,Peanut Butter,Peanut,Goa,0,39
+908,Tomato Ketchup,Tomato,Uttarakhand,1,50
+909,Corn Flour,Corn,Karnatak,1,26
+910,Ginger,Ginger,Punjab,1,9
+911,Corn Oil,Corn,West Bengal,1,28
+912,Red Onion,Onion,Uttarakhand,0,97
+913,Garlic,Garlic,Ladakh,0,23
+914,Yellow Onion,Onion,Odisha,0,15
+915,Mango Juice,Mango,Chhattisgarh,1,12
+916,Tomato Ketchup,Tomato,Karnatak,1,52
+917,Peanut Butter,Peanut,Jammu and Kashmir,0,47
+918,Rice,Rice,Uttar Pradesh,0,80
+919,Cumin,Cumin,Andhra Pradesh,0,62
+920,Sesame,Sesame,Maharashtra,1,32
+921,Mango Juice,Mango,Ladakh,0,72
+922,Mango Juice,Mango,Goa,0,88
+923,Yellow Onion,Onion,Telangana,0,72
+924,Sesame Oil,Sesame,West Bengal,1,89
+925,Sesame Oil,Sesame,Maharashtra,1,23
+926,Potato Juice,Potato,Jammu and Kashmir,1,94
+927,Corn Oil,Corn,Goa,0,11
+928,Orange Juice,Orange,Goa,0,98
+929,Rosemary,Rosemary,Haryana,0,71
+930,Cumin,Cumin,Jharkhand,0,15
+931,Basil,Basil,Assam,1,28
+932,Lemon Juice,Lemon,Odisha,0,35
+933,Banana Juice,Banana,Chhattisgarh,1,86
+934,Peanut Butter,Peanut,Himachal Pradesh,0,10
+935,Mint,Mint,Haryana,0,40
+936,Green Lentil,Green Lentil,Uttar Pradesh,1,42
+937,Mustard Oil,Mustard,Uttarakhand,0,59
+938,Coriander,Coriander,Tamil Nadu,1,82
+939,Cucumber Pickle,Cucumber,Punjab,0,14
+940,Peanut Oil,Peanut,Chhattisgarh,0,10
+941,Green Lentil,Green Lentil,Goa,1,45
+942,Tomato Ketchup,Tomato,Assam,0,66
+943,Tomato Ketchup,Tomato,West Bengal,0,84
+944,Banana Juice,Banana,Punjab,1,53
+945,Mint,Mint,Chhattisgarh,0,7
+946,Cucumber Pickle,Cucumber,Kerala,1,70
+947,Mustard Seeds,Mustard,Goa,0,48
+948,Coconut Oil,Coconut,Goa,0,90
+949,Pineapple Juice,Pineapple,Maharashtra,0,5
+950,Corn Oil,Corn,Uttar Pradesh,1,11
+951,Jaggery,Sugarcane,Kerala,1,76
+952,Grapes Juice,Grapes,Assam,1,23
+953,Peanut,Peanut,Jharkhand,0,37
+954,Mustard Oil,Mustard,Jharkhand,1,69
+955,Mustard Oil,Mustard,Jharkhand,0,81
+956,Basil,Basil,Gujarat,0,43
+957,Peanut Oil,Peanut,Tamil Nadu,0,83
+958,Sesame Oil,Sesame,Maharashtra,1,78
+959,Potato Juice,Potato,Chhattisgarh,0,39
+960,Mustard Oil,Mustard,Tamil Nadu,0,73
+961,Corn Flour,Corn,Chhattisgarh,0,80
+962,Rice,Rice,Uttarakhand,1,78
+963,Onion,Onion,Uttar Pradesh,0,23
+964,Cucumber Pickle,Cucumber,Maharashtra,0,18
+965,Green Onion,Onion,Uttar Pradesh,0,69
+966,Yellow Onion,Onion,Maharashtra,0,34
+967,Potato Juice,Potato,Rajasthan,1,39
+968,Red Lentil,Red Lentil,Ladakh,0,57
+969,Coconut Oil,Coconut,Jammu and Kashmir,0,50
+970,Mustard Oil,Mustard,Ladakh,0,88
+971,Yellow Lentil,Yellow Lentil,Kerala,0,80
+972,Orange Juice,Orange,Uttar Pradesh,1,82
+973,Lentil,Lentil,Madhya Pradesh,1,3
+974,Spinach Juice,Spinach,Kerala,1,100
+975,Yellow Onion,Onion,Uttar Pradesh,1,30
+976,Sesame Oil,Sesame,Andhra Pradesh,1,86
+977,Sesame Seeds,Sesame,Odisha,1,47
+978,Jaggery,Sugarcane,Goa,0,70
+979,Garlic,Garlic,Assam,0,60
+980,Cucumber Pickle,Cucumber,Ladakh,0,24
+981,Corn Flour,Corn,Odisha,0,53
+982,Garlic,Garlic,Chhattisgarh,0,57
+983,Orange Juice,Orange,Haryana,0,90
+984,Spinach Juice,Spinach,Maharashtra,0,92
+985,Lemon Juice,Lemon,Karnatak,1,37
+986,Peanut Oil,Peanut,Uttarakhand,1,25
+987,Garlic,Garlic,West Bengal,0,45
+988,Rosemary,Rosemary,Haryana,0,95
+989,Mango Juice,Mango,Tamil Nadu,1,14
+990,Sesame Seeds,Sesame,Kerala,1,65
+991,Rice,Rice,Tamil Nadu,1,65
+992,Yellow Lentil,Yellow Lentil,Tamil Nadu,1,80
+993,Garlic,Garlic,Madhya Pradesh,1,95
+994,Garlic,Garlic,Uttar Pradesh,1,91
+995,Thyme,Thyme,Assam,0,47
+996,Onion,Onion,Andhra Pradesh,1,21
+997,Banana Juice,Banana,Haryana,0,41
+998,Soybean Oil,Soybean,Ladakh,1,88
+999,Peanut Butter,Peanut,Uttarakhand,0,66
+1000,Oregano,Oregano,Gujarat,1,75
+1001,Rosemary,Rosemary,Madhya Pradesh,0,63
+1002,Coconut Oil,Coconut,Madhya Pradesh,0,22
+1003,Corn Oil,Corn,Andhra Pradesh,1,61
+1004,Cumin,Cumin,Rajasthan,0,64
+1005,Green Lentil,Green Lentil,Tamil Nadu,1,20
+1006,Green Onion,Onion,Karnatak,0,37
+1007,Corn Flour,Corn,Odisha,1,24
+1008,Peanut,Peanut,Goa,1,29
+1009,Spinach Juice,Spinach,Goa,1,51
+1010,Jaggery,Sugarcane,Kerala,1,70
+1011,Black Lentil,Black Lentil,Rajasthan,0,22
+1012,Sugar,Sugarcane,Rajasthan,0,52
+1013,Spinach Juice,Spinach,Kerala,0,13
+1014,Peanut,Peanut,Andhra Pradesh,1,12
+1015,Sesame Seeds,Sesame,Punjab,1,35
+1016,Yellow Onion,Onion,Rajasthan,0,62
+1017,Red Onion,Onion,Madhya Pradesh,0,74
+1018,Garlic,Garlic,Tamil Nadu,1,100
+1019,Garlic,Garlic,Andhra Pradesh,1,74
+1020,Orange Juice,Orange,Andhra Pradesh,1,35
+1021,Red Onion,Onion,Punjab,0,24
+1022,Garlic,Garlic,Andhra Pradesh,1,92
+1023,Spinach Juice,Spinach,Chhattisgarh,1,51
+1024,Garlic,Garlic,Uttarakhand,1,7
+1025,Basil,Basil,Kerala,1,90
+1026,Oregano,Oregano,Odisha,0,92
+1027,Sesame,Sesame,West Bengal,1,84
+1028,Banana Juice,Banana,Kerala,1,17
+1029,Orange Juice,Orange,Uttarakhand,1,7
+1030,Mustard,Mustard,Chhattisgarh,0,83
+1031,Apple Juice,Apple,Maharashtra,0,41
+1032,Mango Juice,Mango,Assam,0,54
+1033,Corn Oil,Corn,Assam,0,85
+1034,Garlic,Garlic,Rajasthan,0,93
+1035,Thyme,Thyme,Assam,0,18
+1036,Rice,Rice,Telangana,1,14
+1037,Green Lentil,Green Lentil,Haryana,1,87
+1038,Basil,Basil,Kerala,0,64
+1039,Mustard Oil,Mustard,Karnatak,1,53
+1040,Yellow Lentil,Yellow Lentil,Gujarat,0,6
+1041,Yellow Lentil,Yellow Lentil,Tamil Nadu,0,95
+1042,Peanut Butter,Peanut,Telangana,1,55
+1043,Pineapple Juice,Pineapple,Uttarakhand,1,22
+1044,Corn Oil,Corn,Kerala,0,41
+1045,Rice,Rice,Punjab,1,17
+1046,Mint,Mint,Goa,0,9
+1047,Soybean Oil,Soybean,Punjab,0,22
+1048,Cumin,Cumin,Karnatak,1,94
+1049,Mustard Seeds,Mustard,Tamil Nadu,1,11
+1050,Mustard,Mustard,Assam,1,10
+1051,Rice,Rice,Karnatak,0,48
+1052,Garlic,Garlic,Kerala,0,85
+1053,Mint,Mint,Madhya Pradesh,1,15
+1054,Lemon Juice,Lemon,Punjab,0,13
+1055,Grapes Juice,Grapes,Odisha,1,41
+1056,Mango Juice,Mango,Punjab,1,21
+1057,Rice,Rice,Madhya Pradesh,0,63
+1058,Banana Juice,Banana,Punjab,0,99
+1059,Banana Juice,Banana,Uttarakhand,0,64
+1060,Cotton T-Shirt,Cotton,Himachal Pradesh,0,54
+1061,Almond Milk,Almond,Haryana,0,16
+1062,Corn Flour,Corn,Karnatak,1,58
+1063,Rice,Rice,Odisha,0,63
+1064,Cucumber Pickle,Cucumber,Gujarat,0,30
+1065,Almond Milk,Almond,Punjab,0,35
+1066,Ginger,Ginger,Kerala,1,84
+1067,Oregano,Oregano,Ladakh,0,3
+1068,Cumin,Cumin,Maharashtra,0,41
+1069,Peanut Oil,Peanut,Kerala,1,79
+1070,Black Lentil,Black Lentil,Odisha,1,5
+1071,Sesame Oil,Sesame,West Bengal,1,65
+1072,Wheat Flour,Wheat,Rajasthan,1,65
+1073,Sesame,Sesame,Odisha,0,14
+1074,Ginger,Ginger,Ladakh,0,73
+1075,Yellow Onion,Onion,Assam,0,86
+1076,Peanut Oil,Peanut,Chhattisgarh,1,86
+1077,Apple Juice,Apple,Jammu and Kashmir,0,11
+1078,Onion,Onion,Odisha,0,12
+1079,Black Lentil,Black Lentil,Ladakh,0,99
+1080,Apple Juice,Apple,Assam,1,59
+1081,Turmeric,Turmeric,Uttar Pradesh,1,85
+1082,Tomato Ketchup,Tomato,Assam,1,84
+1083,Cucumber Pickle,Cucumber,Jharkhand,1,42
+1084,Orange Juice,Orange,Telangana,0,50
+1085,Corn Flour,Corn,Tamil Nadu,1,78
+1086,Sesame Seeds,Sesame,Ladakh,1,17
+1087,Onion,Onion,Uttarakhand,0,28
+1088,Rice,Rice,Maharashtra,0,67
+1089,Oregano,Oregano,Telangana,1,9
+1090,Pineapple Juice,Pineapple,Maharashtra,0,20
+1091,Spinach Juice,Spinach,Rajasthan,1,67
+1092,Coriander,Coriander,Madhya Pradesh,1,32
+1093,Lentil,Lentil,Andhra Pradesh,1,65
+1094,Peanut,Peanut,Rajasthan,0,28
+1095,Oregano,Oregano,Maharashtra,0,61
+1096,Sugar,Sugarcane,Rajasthan,0,42
+1097,Peanut Butter,Peanut,Goa,0,75
+1098,Mustard Oil,Mustard,Tamil Nadu,1,100
+1099,Yellow Onion,Onion,Kerala,1,8
+1100,Thyme,Thyme,Jammu and Kashmir,0,31
